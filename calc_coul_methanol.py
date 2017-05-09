@@ -76,7 +76,7 @@ pairs = {0: (),
          5: [2,3,4]}
 
 
-ke = 138.835485 # conv factor to get kJ/mol
+ke = 138.9354859 # conv factor to get kJ/mol
 
 fudge = 0.83333333
 
@@ -84,6 +84,8 @@ n_frames = univ.trajectory.n_frames
 my_diffs = np.zeros((n_frames, n_for_lmbdas+1))
 
 for i_frame in range(n_frames):
+    if i_frame % 1000 == 0:
+        print("doing frame {} of {}".format(i_frame, n_frames))
     univ.trajectory[i_frame]
     # Get positions in nm
     univ.atoms.positions = univ.atoms.positions / 10.0

@@ -36,6 +36,8 @@ n_frames = univ.trajectory.n_frames
 my_diffs = np.zeros((n_frames, 2))
 
 for i_frame in range(n_frames):
+    if i_frame % 100 == 0:
+        print("frame {} of {}".format(i_frame, n_frames))
     univ.trajectory[i_frame]
     # Get positions in nm
     univ.atoms.positions = univ.atoms.positions / 10.0
