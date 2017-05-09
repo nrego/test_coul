@@ -26,7 +26,7 @@ charges = [(0.0, 0.5),
            (0.0, -0.5)]
 
 
-ke = 138.835485 # conv factor to get kJ/mol
+ke = 138.9354859 # conv factor to get kJ/mol
 
 fudge = 1.0
 
