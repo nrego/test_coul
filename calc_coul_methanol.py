@@ -27,11 +27,33 @@ parser.add_argument('-f', '--trajfile', required=True, type=str,
                     help='traj file (trr or xtc)')
 parser.add_argument('-o', '--outfile', default='my_diffs.dat',
                     help='output file for diffs')
+parser.add_argument('--n-periodic-image', type=int, default=0,
+                    help='Number of periodic multiples of each box vector to consider when' \
+                    'calculating coulombic interactions; e.g if 1 will consider all 26 additional' \
+                    'adjacent box images (by shifting each component of the box vector -1, 0, or 1).' \
+                    'default is 0; i.e. do not consider any periodic images')
 
 
 args = parser.parse_args()
 
 univ = MDAnalysis.Universe(args.tprfile, args.trajfile)
+
+# box vector
+box = univ.dimensions[:3] / 10.0
+
+shifts = [0]
+n_shifts = args.n_periodic_images
+assert n_shifts >= 0, "--n-periodic-shifts arg must be an integer >= 0"
+
+if n_shifts > 0:
+    shifts.append(-n_shifts)
+    shifts.append(n_shifts)
+
+shift_vectors = np.array([p for p in itertools.product(shifts, repeat=3)])
+
+# Sanity
+assert np.array_equal(shift_vectors[0], np.zeros(3))
+n_images = shift_vectors.shape[0]
 
 outfile = args.outfile
 
@@ -107,6 +129,7 @@ for i_frame in range(n_frames):
             np.testing.assert_almost_equal(i_charge_a, atm_i.charge)
 
             # any regular (not 14) included atoms
+            # optionally include periodic images
             for j in incl_indices:
                 if j <= i:
                     continue
