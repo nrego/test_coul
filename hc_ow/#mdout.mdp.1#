@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: onbekend (0)
 ;	On host: onbekend
-;	At date: Mon May 15 15:16:35 2017
+;	At date: Mon May 15 14:55:27 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -82,7 +82,7 @@ rlistlong                = -1
 
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
-coulombtype              = pme
+coulombtype              = Cut-off
 rcoulomb-switch          = 0
 rcoulomb                 = 1.2
 ; Relative dielectric constant for the medium and the reaction field
@@ -100,14 +100,14 @@ table-extension          = 1
 ; Seperate tables between energy group pairs
 energygrp_table          = 
 ; Spacing for the PME/PPPM FFT grid
-fourierspacing           = 0.10
+fourierspacing           = 0.12
 ; FFT grid size, when a value is 0 fourierspacing will be used
 fourier_nx               = 0
 fourier_ny               = 0
 fourier_nz               = 0
 ; EWALD/PME/PPPM parameters
-pme_order                = 6
-ewald_rtol               = 1e-6
+pme_order                = 4
+ewald_rtol               = 1e-5
 ewald_geometry           = 3d
 epsilon_surface          = 0
 optimize_fft             = no

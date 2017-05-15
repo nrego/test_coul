@@ -13,7 +13,7 @@ except:
 
 from mdtools import dr
 import itertools
-from IPython import embed
+#from IPython import embed
 
 
 parser = argparse.ArgumentParser('calculate coulombic interactions for methanol')
@@ -82,7 +82,13 @@ charges = [(0.12010, 0.0),
            (0.02770, 0.0),
            (0.02770, 0.0),
            (0.02770, 0.0),
-           (0.39710, 0.0)]
+           (0.39710, 0.0),
+           (-0.834, -0.834),
+           (0.417, 0.417),
+           (0.417, 0.417)]
+
+HW_charge = 0.417
+OW_charge = -0.834
 
 excls = {0: (0,1,2,3,4,5),
          1: (0,1,2,3,4,5),
@@ -105,7 +111,7 @@ ke = 138.9354859 # conv factor to get kJ/mol
 fudge = 0.83333333
 
 n_frames = univ.trajectory.n_frames
-n_frames = 10
+n_frames = 1
 my_diffs = np.zeros((n_frames, n_for_lmbdas+1))
 
 for i_frame in range(n_frames):
@@ -136,23 +142,22 @@ for i_frame in range(n_frames):
             # optionally include periodic images
             
             for j in incl_indices:
-                if j <= i:
-                    continue
+
                 if j in pair_indices:
                     continue
 
                 atm_j = univ.atoms[j]
 
-                #j_type_a, j_type_b = atmtypes[j]
-                #assert atm_j.type == j_type_a
 
-                #j_charge_a, j_charge_b = charges[j]
-                #np.testing.assert_almost_equal(atm_j.charge, j_charge_a)
                 j_charge_a = j_charge_b = atm_j.charge
                 for this_shift in shift_vectors:
+                    if np.array_equal(this_shift, np.zeros(3)):
+                        print("skipping {}".format(this_shift))
+                        continue
                     j_pos = atm_j.position + this_shift*box
                     r = np.sqrt(np.sum((atm_i.position - j_pos)**2))
-
+                    #if r >= 1:
+                    #    continue
                     a_coul = ke*((i_charge_a * j_charge_a)/ r)
                     b_coul = ke*((i_charge_b * j_charge_b)/ r)
 

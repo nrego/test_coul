@@ -24,11 +24,11 @@ nstlog          = 500
 nstlist         = 10
 ns_type         = grid
 pbc             = xyz
-rlist           = 1.0
+rlist           = 1.2
 
 ; ELECTROSTATICS
 coulombtype     = Cut-off
-rcoulomb        = 1.0
+rcoulomb        = 1.2
 
 ; EWALD stuff
 fourierspacing  = 0.12
@@ -39,7 +39,7 @@ optimize_fft    = no
 
 ; VDW
 vdwtype         = cut-off
-rvdw            = 1.0
+rvdw            = 1.2
 DispCorr        = no
 
 ; TEMPERATURE COUPLING
