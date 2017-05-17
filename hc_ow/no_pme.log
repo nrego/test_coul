@@ -1,7 +1,7 @@
-Log file opened on Mon May 15 14:55:49 2017
-Host: huntsman-ve565-2353.apn.wlan.upenn.edu  pid: 42426  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
-nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
+Log file opened on Mon May 15 15:25:22 2017
+Host: nick-ThinkPad-T440p  pid: 3424  nodeid: 0  nnodes:  1
+The Gromacs distribution was built @TMP_TIME@ by
+nick@nick-ThinkPad-T440p [CMAKE] (@TMP_MACHINE@)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
@@ -82,8 +82,8 @@ Input Parameters:
    nkx                  = 0
    nky                  = 0
    nkz                  = 0
-   pme_order            = 4
-   ewald_rtol           = 1e-05
+   pme_order            = 6
+   ewald_rtol           = 1e-06
    ewald_geometry       = 0
    epsilon_surface      = 0
    optimize_fft         = FALSE
@@ -248,7 +248,7 @@ Max number of connections per atom is 0
 Total number of connections is 0
 Initial temperature: 320.712 K
 
-Started mdrun on node 0 Mon May 15 14:55:49 2017
+Started mdrun on node 0 Mon May 15 15:25:22 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
@@ -256,9 +256,9 @@ Started mdrun on node 0 Mon May 15 14:55:49 2017
 Grid: 3 x 3 x 3 cells
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-            nan            nan            nan            nan            nan
+           -nan           -nan           -nan           -nan           -nan
   Conserved En.    Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-            nan            nan            nan            nan    0.00000e+00
+           -nan           -nan           -nan           -nan    0.00000e+00
 
            Step           Time         Lambda
              10        0.02000        0.00000
@@ -735,17 +735,17 @@ Grid: 3 x 3 x 3 cells
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1         51        0.001        0.0     7.2
- Force                  1         51        0.001        0.0    15.1
- Write traj.            1         51        0.001        0.0    14.0
- Update                 1         51        0.000        0.0     1.0
- Rest                   1                   0.005        0.0    62.7
+ Neighbor search        1         51        0.001        0.0     6.4
+ Force                  1         51        0.002        0.0     8.7
+ Write traj.            1         51        0.003        0.0    12.1
+ Update                 1         51        0.000        0.0     1.1
+ Rest                   1                   0.015        0.0    71.7
 -----------------------------------------------------------------------
- Total                  1                   0.008        0.0   100.0
+ Total                  1                   0.021        0.0   100.0
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.002      0.002     99.9
+       Time:      0.008      0.008     97.4
                (Mnbf/s)   (MFlops)   (ns/day)  (hour/ns)
-Performance:      0.000     25.705  36359.852      0.001
-Finished mdrun on node 0 Mon May 15 14:55:49 2017
+Performance:      0.000      8.065  11407.670      0.002
+Finished mdrun on node 0 Mon May 15 15:25:22 2017

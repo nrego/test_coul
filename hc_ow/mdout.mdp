@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: onbekend (0)
-;	On host: onbekend
-;	At date: Mon May 15 15:16:35 2017
+;	By user: nick (1000)
+;	On host: nick-ThinkPad-T440p
+;	At date: Mon May 15 15:44:06 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -82,7 +82,7 @@ rlistlong                = -1
 
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
-coulombtype              = pme
+coulombtype              = ewald
 rcoulomb-switch          = 0
 rcoulomb                 = 1.2
 ; Relative dielectric constant for the medium and the reaction field
@@ -266,10 +266,10 @@ dihre                    = no
 dihre-fc                 = 1000
 
 ; Free energy control stuff
-free_energy              = yes
-init_lambda              = 0.0
+free-energy              = no
+init-lambda              = 0
 delta-lambda             = 0
-foreign_lambda           = 0.0 0.5 1.0
+foreign_lambda           = 
 sc-alpha                 = 0
 sc-power                 = 0
 sc-sigma                 = 0.3

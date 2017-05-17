@@ -1,4 +1,4 @@
-# This file was created Mon May 15 14:55:49 2017
+# This file was created Mon May 15 15:25:22 2017
 # by the following command:
 # mdrun -deffnm no_pme -rerun traj.trr -reprod -nt 1 
 #
@@ -21,7 +21,7 @@
 @ s1 legend "\xD\f{}H \xl\f{} 0"
 @ s2 legend "\xD\f{}H \xl\f{} 0.5"
 @ s3 legend "\xD\f{}H \xl\f{} 1"
-0.0000 nan nan nan nan
+0.0000 -nan -nan -nan -nan
 0.0200 0 0 0 0
 0.0400 0 0 0 0
 0.0600 32 0 16 32

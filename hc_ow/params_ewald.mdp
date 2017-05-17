@@ -27,7 +27,7 @@ pbc             = xyz
 rlist           = 1.2
 
 ; ELECTROSTATICS
-coulombtype     = cut-off
+coulombtype     = ewald
 rcoulomb        = 1.2
 
 ; EWALD stuff
@@ -61,7 +61,4 @@ lincs_order          = 4
 lincs_iter           = 1
 continuation         = no
 
-free_energy     = yes
-init_lambda     = 0.0
-foreign_lambda  = 0.0 0.5 1.0
 
