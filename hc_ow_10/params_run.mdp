@@ -1,0 +1,62 @@
+; in case of posres, etc
+; define        =
+
+; RUN CONTROL shit
+
+integrator      = md
+dt              = 0.002
+; set to taste
+nsteps          = 5000
+
+comm-mode       = None
+nstcomm         = 10
+comm-grps       = System
+
+; OUTPUT CONTROL
+nstxout         = 10
+nstvout         = 10
+nstfout         = 10
+; Change if you want to output energies more often
+nstenergy       = 10
+nstlog          = 500
+
+; NEIGHBOR SEARCHING
+nstlist         = 1
+ns_type         = grid
+pbc             = xyz
+rlist           = 0.9
+
+; ELECTROSTATICS
+coulombtype     = cut-off
+rcoulomb        = 0.9
+
+; EWALD stuff
+fourierspacing  = 0.10
+pme_order       = 4
+ewald_rtol      = 1e-5
+ewald_geometry  = 3d
+optimize_fft    = no
+
+; VDW
+vdwtype         = cut-off
+rvdw            = 0.9
+DispCorr        = no
+
+; TEMPERATURE COUPLING
+; Used for NVT equilibration only - Berendsen doesn't reproduce correct kinetic ensemble
+tcoupl          = No
+
+; VELOCITY GENERATION
+gen_vel         = no
+gen_temp        = 300
+gen_seed        = -1
+
+; BOND CONSTRAINTS
+constraints          = h-bonds
+constraint-algorithm = lincs
+lincs_order          = 4
+lincs_iter           = 1
+continuation         = no
+
+free_energy     = no
+
