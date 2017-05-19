@@ -4,9 +4,9 @@
 ; RUN CONTROL shit
 
 integrator      = md
-dt              = 0.001
+dt              = 0.002
 ; set to taste
-nsteps          = 5000
+nsteps          = 1000
 
 comm-mode       = None
 nstcomm         = 10
@@ -33,7 +33,7 @@ rcoulomb        = 0.9
 ; EWALD stuff
 fourierspacing  = 0.10
 pme_order       = 4
-ewald_rtol      = 1e-5
+ewald_rtol      = 1e-6
 ewald_geometry  = 3d
 optimize_fft    = no
 
