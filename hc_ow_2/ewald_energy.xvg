@@ -1,10 +1,10 @@
-# This file was created Fri May 19 18:34:34 2017
+# This file was created Mon May 22 15:25:00 2017
 # by the following command:
 # g_energy -f ewald.edr -o ewald_energy.xvg 
 #
 # g_energy is part of G R O M A C S:
 #
-# Gravel Rubs Often Many Awfully Cauterized Sores
+# S  C  A  M  O  R  G
 #
 @    title "Gromacs Energies"
 @    xaxis  label "Time (ps)"
@@ -17,7 +17,7 @@
 @ legend 0.78, 0.8
 @ legend length 2
 @ s0 legend "Potential"
-    0.000000        -nan
+    0.000000         nan
     0.020000  -69.468765
     0.040000  -34.734894
     0.060000  -23.157520

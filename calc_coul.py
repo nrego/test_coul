@@ -60,7 +60,7 @@ print("  ...{} shift vectors generated!".format(shift_vectors.shape[0]))
 n_waves = 5
 waves = []
 print("generating wave vectors for n_waves: {}!".format(n_waves))
-for n_wave in range(1,n_waves+1):
+for n_wave in range(0,n_waves+1):
     waves.append(-n_wave)
     waves.append(n_wave)
 waves = np.unique(waves)
@@ -101,7 +101,8 @@ for i_frame in range(n_frames):
             ewald_sr += ke*(-0.01)*(1/r)*erfc(beta_smooth*r)
 
     for this_wave in wave_vectors:
-        
+        if np.array_equal(this_wave, np.zeros(3)):
+            continue
         k = this_wave * 2 * np.pi / box
 
         s_k = (0.1)*np.exp(1j*np.dot(k,pos_i)) - (0.1)*np.exp(1j*np.dot(k,pos_j))
@@ -126,6 +127,6 @@ for i_frame in range(n_frames):
 header = 'time(ps)        r(nm)        Coul_simple(kJ/mol)        Coul_with_periodic(kJ/mol)         U_dir        U_rec'
 np.savetxt('my_diffs.dat', my_diffs)
 
-#plt.plot(my_diffs[:,0], -my_diffs[:,5], label='calc')
-#plt.plot(my_diffs[:,0], -gmx_wave, label='gmx')
-#plt.legend()
+plt.plot(my_diffs[:,0], my_diffs[:,5], label='calc')
+plt.plot(my_diffs[:,0], gmx_wave, 'o', label='gmx')
+plt.legend()

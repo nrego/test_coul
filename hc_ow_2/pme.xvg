@@ -1,10 +1,10 @@
-# This file was created Fri May 19 18:34:34 2017
+# This file was created Mon May 22 15:24:59 2017
 # by the following command:
 # mdrun -deffnm pme -rerun traj.trr -reprod -nt 1 
 #
 # mdrun is part of G R O M A C S:
 #
-# Gravel Rubs Often Many Awfully Cauterized Sores
+# Gyas ROwers Mature At Cryogenic Speed
 #
 @    title "dH/d\xl\f{}, \xD\f{}H"
 @    xaxis  label "Time (ps)"
@@ -20,7 +20,7 @@
 @ s0 legend "dH/d\xl\f{} \xl\f{} 0"
 @ s1 legend "\xD\f{}H \xl\f{} 0"
 @ s2 legend "\xD\f{}H \xl\f{} 1"
-0.0000 -nan -nan -nan
+0.0000 nan nan nan
 0.0200 69.4688 0 69.4688
 0.0400 34.7349 0 34.7349
 0.0600 23.1575 0 23.1575

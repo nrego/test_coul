@@ -1,10 +1,10 @@
-# This file was created Fri May 19 18:51:36 2017
+# This file was created Mon May 22 15:25:00 2017
 # by the following command:
 # g_energy -f pme.edr -o pme_energy.xvg 
 #
 # g_energy is part of G R O M A C S:
 #
-# Gromacs Runs One Microsecond At Cannonball Speeds
+# S  C  A  M  O  R  G
 #
 @    title "Gromacs Energies"
 @    xaxis  label "Time (ps)"
