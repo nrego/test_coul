@@ -9,7 +9,7 @@ pme_energy = np.loadtxt('pme_energy.xvg', comments=['@','#'])
 no_pme = dr.loadXVG('no_pme.xvg').data[1.0]
 no_pme_energy = np.loadtxt('no_pme_energy.xvg', comments=['@','#'])
 
-recip = np.loadtxt('ewald_lr.xvg', comments=['@', '#'])
+recip = np.loadtxt('pme_energy_lr.xvg', comments=['@', '#'])
 gmx_ewald_lr = recip[:,1] - recip[0,1]
 gmx_wave = gmx_ewald_lr
 ewald_sr = np.loadtxt('ewald_sr.xvg', comments=['@', '#'])

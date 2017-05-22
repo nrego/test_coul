@@ -69,7 +69,10 @@ print("  ...{} wave vectors generated!".format(wave_vectors.shape[0]))
 
 n_frames = univ.trajectory.n_frames
 #n_frames = 1
-my_diffs = np.zeros((n_frames, 6))
+my_diffs = np.zeros((n_frames, 7))
+
+for_lmbda = 1.0
+this_lmbda = 0.0
 
 for i_frame in range(n_frames):
     if i_frame % 100 == 0:
@@ -123,8 +126,9 @@ for i_frame in range(n_frames):
     my_diffs[i_frame, 3] = coul
     my_diffs[i_frame, 4] = ewald_sr
     my_diffs[i_frame, 5] = ewald_lr2 #+ ewald_self
+    my_diffs[i_frame, 6] = ewald_sr + ewald_lr2 + ewald_self
 
-header = 'time(ps)        r(nm)        Coul_simple(kJ/mol)        Coul_with_periodic(kJ/mol)         U_dir        U_rec'
+header = 'time(ps)        r(nm)        Coul_simple(kJ/mol)        Coul_with_periodic(kJ/mol)         U_dir        U_rec      U_ewald_tot'
 np.savetxt('my_diffs.dat', my_diffs)
 
 plt.plot(my_diffs[:,0], my_diffs[:,5], label='calc')
