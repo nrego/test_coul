@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: onbekend (0)
 ;	On host: onbekend
-;	At date: Wed May 17 19:14:24 2017
+;	At date: Tue May 23 13:27:07 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -269,7 +269,7 @@ dihre-fc                 = 1000
 free_energy              = yes
 init_lambda              = 0.0
 delta-lambda             = 0
-foreign_lambda           = 0.0 1.0
+foreign_lambda           = 0.0 0.5 1.0
 sc-alpha                 = 0
 sc-power                 = 0
 sc-sigma                 = 0.3

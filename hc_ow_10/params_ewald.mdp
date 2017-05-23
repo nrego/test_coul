@@ -4,9 +4,9 @@
 ; RUN CONTROL shit
 
 integrator      = md
-dt              = 0.002
+dt              = 0.001
 ; set to taste
-nsteps          = 500 ; 1 ps
+nsteps          = 5000
 
 comm-mode       = None
 nstcomm         = 10
@@ -21,14 +21,14 @@ nstenergy       = 10
 nstlog          = 500
 
 ; NEIGHBOR SEARCHING
-nstlist         = 10
-ns_type         = grid
+nstlist         = 0
+ns_type         = simple
 pbc             = xyz
-rlist           = 1.2
+rlist           = 0.9
 
 ; ELECTROSTATICS
 coulombtype     = ewald
-rcoulomb        = 1.2
+rcoulomb        = 0.9
 
 ; EWALD stuff
 fourierspacing  = 0.10
@@ -39,15 +39,12 @@ optimize_fft    = no
 
 ; VDW
 vdwtype         = cut-off
-rvdw            = 1.2
+rvdw            = 0.9
 DispCorr        = no
 
 ; TEMPERATURE COUPLING
 ; Used for NVT equilibration only - Berendsen doesn't reproduce correct kinetic ensemble
-tcoupl          = Vrescale
-tc_grps         = System
-tau_t           = 0.5 
-ref_t           = 300
+tcoupl          = No
 
 ; VELOCITY GENERATION
 gen_vel         = no
@@ -61,4 +58,5 @@ lincs_order          = 4
 lincs_iter           = 1
 continuation         = no
 
+free_energy     = no
 

@@ -61,7 +61,7 @@ print("self-self Ewald correction: {} (kJ/mol)".format(ewald_self_this))
 
 box = univ.dimensions[:3] / 10.0
 
-n_waves = 10
+n_waves = 15
 waves = []
 print("generating wave vectors for n_waves: {}!".format(n_waves))
 for n_wave in range(0,n_waves+1):
@@ -80,7 +80,7 @@ for i_frame in range(n_frames):
     if i_frame % 100 == 0:
         print("frame {} of {}".format(i_frame, n_frames))
     univ.trajectory[i_frame]
-    #univ.trajectory[50]
+    #univ.trajectory[250]
     # Get positions in nm
     univ.atoms.positions = univ.atoms.positions / 10.0
     coul_this = 0.0
@@ -150,8 +150,8 @@ for i_frame in range(n_frames):
     for i_for in range(n_for_lmbdas):
         my_diffs[i_frame, i_for, 2] = coul_for[i_for] - coul_this
         my_diffs[i_frame, i_for, 3] = ewald_sr_for[i_for] - ewald_sr_this
-        my_diffs[i_frame, i_for, 4] = ewald_lr_for[i_for] - ewald_lr_this
-        my_diffs[i_frame, i_for, 5] = my_diffs[i_frame, i_for, 3:5].sum() + ewald_self_for[i_for] - ewald_self_this
+        my_diffs[i_frame, i_for, 4] = ewald_lr_for[i_for] - ewald_lr_this + ewald_self_for[i_for] - ewald_self_this
+        my_diffs[i_frame, i_for, 5] = my_diffs[i_frame, i_for, 3:5].sum() 
 
 
 #header = 'time(ps)        r(nm)        Coul_simple(kJ/mol)        Coul_with_periodic(kJ/mol)         U_dir        U_rec      U_ewald_tot'

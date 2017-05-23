@@ -1,12 +1,12 @@
-Log file opened on Wed May 17 19:14:24 2017
-Host: huntsman-ve565-2353.apn.wlan.upenn.edu  pid: 47301  nodeid: 0  nnodes:  1
+Log file opened on Tue May 23 13:27:07 2017
+Host: huntsman-ve565-2353.apn.wlan.upenn.edu  pid: 7400  nodeid: 0  nnodes:  1
 The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
 nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                       Great Red Owns Many ACres of Sand 
+               Giving Russians Opium May Alter Current Situation
 
                             :-)  VERSION 4.5.3  (-:
 
@@ -143,8 +143,8 @@ Input Parameters:
    free_energy          = yes
    init_lambda          = 0
    delta_lambda         = 0
-   n_foreign_lambda     = 2
-   foreign_lambda:           0           1
+   n_foreign_lambda     = 3
+   foreign_lambda:           0         0.5           1
    sc_alpha             = 0
    sc_power             = 0
    sc_sigma             = 0.3
@@ -241,14 +241,14 @@ Max number of connections per atom is 0
 Total number of connections is 0
 Initial temperature: 320.712 K
 
-Started mdrun on node 0 Wed May 17 19:14:24 2017
+Started mdrun on node 0 Tue May 23 13:27:07 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-            nan            nan            nan            nan            nan
+    0.00000e+00           -inf           -inf            nan            nan
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
             nan            nan            nan    0.00000e+00
 
@@ -257,405 +257,405 @@ Started mdrun on node 0 Wed May 17 19:14:24 2017
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    7.37591e+13   -6.94728e+01    7.37591e+13    5.16429e+26    5.16429e+26
+    0.00000e+00   -6.94728e+01   -6.94728e+01    9.44436e+00   -6.00284e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    2.07039e+28    5.71701e+24    0.00000e+00    0.00000e+00
+    3.78629e+02   -2.79989e-01    6.94728e+01    0.00000e+00
 
            Step           Time         Lambda
              20        0.04000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.80075e+10   -3.47364e+01    1.80075e+10    7.69534e+18    7.69534e+18
+    0.00000e+00   -3.47364e+01   -3.47364e+01    7.76431e+00   -2.69721e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.08511e+20    8.51895e+16    0.00000e+00    0.00000e+00
+    3.11276e+02   -1.06317e-01    3.47364e+01    0.00000e+00
 
            Step           Time         Lambda
              30        0.06000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.38780e+08   -2.31576e+01    1.38780e+08    2.03154e+14    2.03154e+14
+    0.00000e+00   -2.31576e+01   -2.31576e+01    7.84599e+00   -1.53116e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    8.14456e+15    2.24898e+12    1.60000e+01    0.00000e+00
+    3.14550e+02   -4.13232e-02    2.31576e+01    0.00000e+00
 
            Step           Time         Lambda
              40        0.08000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    4.39448e+06   -1.73682e+01    4.39446e+06    1.14621e+11    1.14625e+11
+    0.00000e+00   -1.73682e+01   -1.73682e+01    7.90357e+00   -9.46462e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    4.59521e+12    1.26918e+09    1.75000e+01    0.00000e+00
+    3.16858e+02   -8.64048e-03    1.73682e+01    0.00000e+00
 
            Step           Time         Lambda
              50        0.10000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    3.01618e+05   -1.38946e+01    3.01604e+05    3.46012e+08    3.46314e+08
+    0.00000e+00   -1.38946e+01   -1.38946e+01    7.93531e+00   -5.95924e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    1.38718e+10    3.85050e+06    1.39062e+01    0.00000e+00
+    3.18131e+02    1.09379e-02    1.38946e+01    0.00000e+00
 
            Step           Time         Lambda
              60        0.12000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    3.37171e+04   -1.15788e+01    3.37055e+04    3.01405e+06    3.04776e+06
+    0.00000e+00   -1.15788e+01   -1.15788e+01    7.95391e+00   -3.62489e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    1.20835e+08    3.56114e+04    1.15781e+01    0.00000e+00
+    3.18876e+02    2.39617e-02    1.15788e+01    0.00000e+00
 
            Step           Time         Lambda
              70        0.14000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    5.26254e+03   -9.92468e+00    5.25262e+03    5.45474e+04    5.98000e+04
+    0.00000e+00   -9.92468e+00   -9.92468e+00    7.96558e+00   -1.95910e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    2.18684e+06    9.55550e+02    9.92480e+00    0.00000e+00
+    3.19344e+02    3.32466e-02    9.92468e+00    0.00000e+00
 
            Step           Time         Lambda
              80        0.16000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.04354e+03   -8.68410e+00    1.03486e+03    1.70702e+03    2.74188e+03
+    0.00000e+00   -8.68410e+00   -8.68410e+00    7.97334e+00   -7.10758e-01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    6.84352e+04    8.91523e+01    8.68408e+00    0.00000e+00
+    3.19655e+02    4.01992e-02    8.68410e+00    0.00000e+00
 
            Step           Time         Lambda
              90        0.18000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    2.46464e+02   -7.71920e+00    2.38745e+02    9.15519e+01    3.30297e+02
+    0.00000e+00   -7.71920e+00   -7.71920e+00    7.97874e+00    2.59544e-01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.67037e+03    1.78293e+01    7.71919e+00    0.00000e+00
+    3.19872e+02    4.56000e-02    7.71920e+00    0.00000e+00
 
            Step           Time         Lambda
             100        0.20000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.59493e+01   -6.94728e+00    5.90020e+01    1.46336e+01    7.36356e+01
+    0.00000e+00   -6.94728e+00   -6.94728e+00    7.98265e+00    1.03537e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    5.86669e+02    4.76337e+00    6.94728e+00    0.00000e+00
+    3.20029e+02    4.99160e-02    6.94728e+00    0.00000e+00
 
            Step           Time         Lambda
             110        0.22000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.90935e+01   -6.31571e+00    1.27778e+01    8.90471e+00    2.16825e+01
+    0.00000e+00   -6.31571e+00   -6.31571e+00    7.98556e+00    1.66986e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.56995e+02    1.47825e+00    6.31571e+00    0.00000e+00
+    3.20146e+02    5.34440e-02    6.31571e+00    0.00000e+00
 
            Step           Time         Lambda
             120        0.24000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    5.65707e+00   -5.78940e+00   -1.32326e-01    8.18947e+00    8.05715e+00
+    0.00000e+00   -5.78940e+00   -5.78940e+00    7.98779e+00    2.19839e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.28320e+02    5.21229e-01    5.78940e+00    0.00000e+00
+    3.20235e+02    5.63819e-02    5.78940e+00    0.00000e+00
 
            Step           Time         Lambda
             130        0.26000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.54787e+00   -5.34406e+00   -3.79619e+00    8.04587e+00    4.24968e+00
+    0.00000e+00   -5.34406e+00   -5.34406e+00    7.98953e+00    2.64547e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.22563e+02    2.16037e-01    5.34406e+00    0.00000e+00
+    3.20305e+02    5.88662e-02    5.34406e+00    0.00000e+00
 
            Step           Time         Lambda
             140        0.28000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    2.63775e-01   -4.96234e+00   -4.69857e+00    8.00767e+00    3.30910e+00
+    0.00000e+00   -4.96234e+00   -4.96234e+00    7.99092e+00    3.02858e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.21032e+02    1.13147e-01    4.96234e+00    0.00000e+00
+    3.20360e+02    6.09944e-02    4.96234e+00    0.00000e+00
 
            Step           Time         Lambda
             150        0.30000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.17153e-01   -4.63152e+00   -4.74867e+00    7.99650e+00    3.24783e+00
+    0.00000e+00   -4.63152e+00   -4.63152e+00    7.99204e+00    3.36053e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20584e+02    7.78765e-02    4.63152e+00    0.00000e+00
+    3.20405e+02    6.28380e-02    4.63152e+00    0.00000e+00
 
            Step           Time         Lambda
             160        0.32000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.03460e-01   -4.34205e+00   -4.54551e+00    7.99351e+00    3.44800e+00
+    0.00000e+00   -4.34205e+00   -4.34205e+00    7.99296e+00    3.65092e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20464e+02    6.64021e-02    4.34205e+00    0.00000e+00
+    3.20442e+02    6.44504e-02    4.34205e+00    0.00000e+00
 
            Step           Time         Lambda
             170        0.34000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.96958e-01   -4.08663e+00   -4.28359e+00    7.99312e+00    3.70952e+00
+    0.00000e+00   -4.08663e+00   -4.08663e+00    7.99373e+00    3.90709e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20448e+02    6.35292e-02    4.08663e+00    0.00000e+00
+    3.20473e+02    6.58727e-02    4.08663e+00    0.00000e+00
 
            Step           Time         Lambda
             180        0.36000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.65860e-01   -3.85960e+00   -4.02546e+00    7.99353e+00    3.96807e+00
+    0.00000e+00   -3.85960e+00   -3.85960e+00    7.99437e+00    4.13477e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20465e+02    6.37363e-02    3.85960e+00    0.00000e+00
+    3.20499e+02    6.71364e-02    3.85960e+00    0.00000e+00
 
            Step           Time         Lambda
             190        0.38000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.32680e-01   -3.65646e+00   -3.78914e+00    7.99414e+00    4.20500e+00
+    0.00000e+00   -3.65646e+00   -3.65646e+00    7.99491e+00    4.33845e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20489e+02    6.49586e-02    3.65646e+00    0.00000e+00
+    3.20520e+02    6.82668e-02    3.65646e+00    0.00000e+00
 
            Step           Time         Lambda
             200        0.40000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.04022e-01   -3.47364e+00   -3.57766e+00    7.99474e+00    4.41708e+00
+    0.00000e+00   -3.47364e+00   -3.47364e+00    7.99538e+00    4.52174e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20513e+02    6.64202e-02    3.47364e+00    0.00000e+00
+    3.20539e+02    6.92839e-02    3.47364e+00    0.00000e+00
 
            Step           Time         Lambda
             210        0.42000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -8.10328e-02   -3.30823e+00   -3.38926e+00    7.99528e+00    4.60602e+00
+    0.00000e+00   -3.30823e+00   -3.30823e+00    7.99578e+00    4.68755e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20535e+02    6.78402e-02    3.30823e+00    0.00000e+00
+    3.20555e+02    7.02039e-02    3.30823e+00    0.00000e+00
 
            Step           Time         Lambda
             220        0.44000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -6.31446e-02   -3.15785e+00   -3.22100e+00    7.99574e+00    4.77474e+00
+    0.00000e+00   -3.15785e+00   -3.15785e+00    7.99613e+00    4.83827e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20553e+02    6.91293e-02    3.15785e+00    0.00000e+00
+    3.20569e+02    7.10401e-02    3.15785e+00    0.00000e+00
 
            Step           Time         Lambda
             230        0.46000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -4.93909e-02   -3.02056e+00   -3.06995e+00    7.99613e+00    4.92618e+00
+    0.00000e+00   -3.02056e+00   -3.02056e+00    7.99643e+00    4.97587e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20569e+02    7.02716e-02    3.02056e+00    0.00000e+00
+    3.20581e+02    7.18034e-02    3.02056e+00    0.00000e+00
 
            Step           Time         Lambda
             240        0.48000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.88477e-02   -2.89470e+00   -2.93355e+00    7.99647e+00    5.06292e+00
+    0.00000e+00   -2.89470e+00   -2.89470e+00    7.99669e+00    5.10200e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20583e+02    7.12774e-02    2.89470e+00    0.00000e+00
+    3.20592e+02    7.25030e-02    2.89470e+00    0.00000e+00
 
            Step           Time         Lambda
             250        0.50000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.07518e-02   -2.77891e+00   -2.80966e+00    7.99675e+00    5.18709e+00
+    0.00000e+00   -2.77891e+00   -2.77891e+00    7.99693e+00    5.21802e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20594e+02    7.21643e-02    2.77891e+00    0.00000e+00
+    3.20601e+02    7.31465e-02    2.77891e+00    0.00000e+00
 
            Step           Time         Lambda
             260        0.52000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.45086e-02   -2.67203e+00   -2.69654e+00    7.99700e+00    5.30046e+00
+    0.00000e+00   -2.67203e+00   -2.67203e+00    7.99714e+00    5.32511e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20604e+02    7.29506e-02    2.67203e+00    0.00000e+00
+    3.20610e+02    7.37404e-02    2.67203e+00    0.00000e+00
 
            Step           Time         Lambda
             270        0.54000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.96672e-02   -2.57307e+00   -2.59273e+00    7.99722e+00    5.40449e+00
+    0.00000e+00   -2.57307e+00   -2.57307e+00    7.99732e+00    5.42426e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20613e+02    7.36522e-02    2.57307e+00    0.00000e+00
+    3.20617e+02    7.42902e-02    2.57307e+00    0.00000e+00
 
            Step           Time         Lambda
             280        0.56000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.58891e-02   -2.48117e+00   -2.49706e+00    7.99741e+00    5.50035e+00
+    0.00000e+00   -2.48117e+00   -2.48117e+00    7.99749e+00    5.51632e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20620e+02    7.42827e-02    2.48117e+00    0.00000e+00
+    3.20624e+02    7.48007e-02    2.48117e+00    0.00000e+00
 
            Step           Time         Lambda
             290        0.58000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.29213e-02   -2.39561e+00   -2.40853e+00    7.99757e+00    5.58904e+00
+    0.00000e+00   -2.39561e+00   -2.39561e+00    7.99764e+00    5.60203e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20627e+02    7.48530e-02    2.39561e+00    0.00000e+00
+    3.20630e+02    7.52760e-02    2.39561e+00    0.00000e+00
 
            Step           Time         Lambda
             300        0.60000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.05743e-02   -2.31576e+00   -2.32633e+00    7.99772e+00    5.67139e+00
+    0.00000e+00   -2.31576e+00   -2.31576e+00    7.99777e+00    5.68201e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20633e+02    7.53723e-02    2.31576e+00    0.00000e+00
+    3.20635e+02    7.57195e-02    2.31576e+00    0.00000e+00
 
            Step           Time         Lambda
             310        0.62000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -8.70618e-03   -2.24106e+00   -2.24976e+00    7.99785e+00    5.74809e+00
+    0.00000e+00   -2.24106e+00   -2.24106e+00    7.99790e+00    5.75684e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20638e+02    7.58478e-02    2.24106e+00    0.00000e+00
+    3.20640e+02    7.61343e-02    2.24106e+00    0.00000e+00
 
            Step           Time         Lambda
             320        0.64000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -7.20954e-03   -2.17102e+00   -2.17823e+00    7.99797e+00    5.81974e+00
+    0.00000e+00   -2.17102e+00   -2.17102e+00    7.99801e+00    5.82698e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20643e+02    7.62855e-02    2.17102e+00    0.00000e+00
+    3.20645e+02    7.65232e-02    2.17102e+00    0.00000e+00
 
            Step           Time         Lambda
             330        0.66000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -6.00306e-03   -2.10524e+00   -2.11124e+00    7.99808e+00    5.88684e+00
+    0.00000e+00   -2.10524e+00   -2.10524e+00    7.99811e+00    5.89287e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20647e+02    7.66902e-02    2.10524e+00    0.00000e+00
+    3.20649e+02    7.68884e-02    2.10524e+00    0.00000e+00
 
            Step           Time         Lambda
             340        0.68000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -5.02467e-03   -2.04332e+00   -2.04834e+00    7.99818e+00    5.94984e+00
+    0.00000e+00   -2.04332e+00   -2.04332e+00    7.99820e+00    5.95488e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20651e+02    7.70661e-02    2.04332e+00    0.00000e+00
+    3.20652e+02    7.72322e-02    2.04332e+00    0.00000e+00
 
            Step           Time         Lambda
             350        0.70000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -4.22668e-03   -1.98494e+00   -1.98916e+00    7.99827e+00    6.00910e+00
+    0.00000e+00   -1.98494e+00   -1.98494e+00    7.99828e+00    6.01335e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20655e+02    7.74164e-02    1.98494e+00    0.00000e+00
+    3.20656e+02    7.75563e-02    1.98494e+00    0.00000e+00
 
            Step           Time         Lambda
             360        0.72000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.57224e-03   -1.92980e+00   -1.93337e+00    7.99835e+00    6.06498e+00
+    0.00000e+00   -1.92980e+00   -1.92980e+00    7.99836e+00    6.06856e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20658e+02    7.77440e-02    1.92980e+00    0.00000e+00
+    3.20659e+02    7.78623e-02    1.92980e+00    0.00000e+00
 
            Step           Time         Lambda
             370        0.74000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.03272e-03   -1.87764e+00   -1.88067e+00    7.99842e+00    6.11775e+00
+    0.00000e+00   -1.87764e+00   -1.87764e+00    7.99843e+00    6.12079e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20661e+02    7.80513e-02    1.87764e+00    0.00000e+00
+    3.20662e+02    7.81518e-02    1.87764e+00    0.00000e+00
 
            Step           Time         Lambda
             380        0.76000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.58570e-03   -1.82823e+00   -1.83082e+00    7.99849e+00    6.16767e+00
+    0.00000e+00   -1.82823e+00   -1.82823e+00    7.99850e+00    6.17027e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20664e+02    7.83403e-02    1.82823e+00    0.00000e+00
+    3.20664e+02    7.84260e-02    1.82823e+00    0.00000e+00
 
            Step           Time         Lambda
             390        0.78000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.21355e-03   -1.78135e+00   -1.78357e+00    7.99855e+00    6.21498e+00
+    0.00000e+00   -1.78135e+00   -1.78135e+00    7.99856e+00    6.21721e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20666e+02    7.86127e-02    1.78135e+00    0.00000e+00
+    3.20667e+02    7.86862e-02    1.78135e+00    0.00000e+00
 
            Step           Time         Lambda
             400        0.80000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.90231e-03   -1.73682e+00   -1.73872e+00    7.99861e+00    6.25989e+00
+    0.00000e+00   -1.73682e+00   -1.73682e+00    7.99862e+00    6.26180e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20669e+02    7.88702e-02    1.73682e+00    0.00000e+00
+    3.20669e+02    7.89333e-02    1.73682e+00    0.00000e+00
 
            Step           Time         Lambda
             410        0.82000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.64088e-03   -1.69446e+00   -1.69610e+00    7.99866e+00    6.30256e+00
+    0.00000e+00   -1.69446e+00   -1.69446e+00    7.99867e+00    6.30421e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20671e+02    7.91139e-02    1.69446e+00    0.00000e+00
+    3.20671e+02    7.91683e-02    1.69446e+00    0.00000e+00
 
            Step           Time         Lambda
             420        0.84000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.42037e-03   -1.65411e+00   -1.65553e+00    7.99871e+00    6.34318e+00
+    0.00000e+00   -1.65411e+00   -1.65411e+00    7.99872e+00    6.34460e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20673e+02    7.93450e-02    1.65411e+00    0.00000e+00
+    3.20673e+02    7.93922e-02    1.65411e+00    0.00000e+00
 
            Step           Time         Lambda
             430        0.86000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.23363e-03   -1.61565e+00   -1.61688e+00    7.99876e+00    6.38188e+00
+    0.00000e+00   -1.61565e+00   -1.61565e+00    7.99876e+00    6.38312e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20675e+02    7.95647e-02    1.61565e+00    0.00000e+00
+    3.20675e+02    7.96056e-02    1.61565e+00    0.00000e+00
 
            Step           Time         Lambda
             440        0.88000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.07489e-03   -1.57893e+00   -1.58000e+00    7.99880e+00    6.41880e+00
+    0.00000e+00   -1.57893e+00   -1.57893e+00    7.99880e+00    6.41988e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20676e+02    7.97736e-02    1.57893e+00    0.00000e+00
+    3.20676e+02    7.98093e-02    1.57893e+00    0.00000e+00
 
            Step           Time         Lambda
             450        0.90000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -9.39452e-04   -1.54384e+00   -1.54478e+00    7.99884e+00    6.45406e+00
+    0.00000e+00   -1.54384e+00   -1.54384e+00    7.99884e+00    6.45500e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20678e+02    7.99728e-02    1.54384e+00    0.00000e+00
+    3.20678e+02    8.00040e-02    1.54384e+00    0.00000e+00
 
            Step           Time         Lambda
             460        0.92000        0.00000
@@ -4352,405 +4352,405 @@ Started mdrun on node 0 Wed May 17 19:14:24 2017
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.07225e-03   -1.57828e+00   -1.57935e+00    8.00060e+00    6.42125e+00
+    0.00000e+00   -1.57763e+00   -1.57763e+00    8.00060e+00    6.42297e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20749e+02    7.97972e-02    1.57828e+00    0.00000e+00
+    3.20748e+02    7.98364e-02    1.57763e+00    0.00000e+00
 
            Step           Time         Lambda
            4570        9.14000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.23054e-03   -1.61497e+00   -1.61620e+00    8.00064e+00    6.38444e+00
+    0.00000e+00   -1.61428e+00   -1.61428e+00    8.00064e+00    6.38635e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20750e+02    7.95894e-02    1.61497e+00    0.00000e+00
+    3.20750e+02    7.96339e-02    1.61428e+00    0.00000e+00
 
            Step           Time         Lambda
            4580        9.16000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.41673e-03   -1.65340e+00   -1.65482e+00    8.00069e+00    6.34587e+00
+    0.00000e+00   -1.65269e+00   -1.65269e+00    8.00068e+00    6.34800e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20752e+02    7.93710e-02    1.65340e+00    0.00000e+00
+    3.20752e+02    7.94219e-02    1.65269e+00    0.00000e+00
 
            Step           Time         Lambda
            4590        9.18000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.63657e-03   -1.69371e+00   -1.69535e+00    8.00074e+00    6.30539e+00
+    0.00000e+00   -1.69296e+00   -1.69296e+00    8.00073e+00    6.30777e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20754e+02    7.91411e-02    1.69371e+00    0.00000e+00
+    3.20754e+02    7.91995e-02    1.69296e+00    0.00000e+00
 
            Step           Time         Lambda
            4600        9.20000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.89719e-03   -1.73604e+00   -1.73794e+00    8.00079e+00    6.26286e+00
+    0.00000e+00   -1.73525e+00   -1.73525e+00    8.00078e+00    6.26554e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20756e+02    7.88988e-02    1.73604e+00    0.00000e+00
+    3.20756e+02    7.89660e-02    1.73525e+00    0.00000e+00
 
            Step           Time         Lambda
            4610        9.22000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.20745e-03   -1.78053e+00   -1.78274e+00    8.00085e+00    6.21811e+00
+    0.00000e+00   -1.77970e+00   -1.77970e+00    8.00084e+00    6.22114e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20759e+02    7.86430e-02    1.78053e+00    0.00000e+00
+    3.20758e+02    7.87206e-02    1.77970e+00    0.00000e+00
 
            Step           Time         Lambda
            4620        9.24000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.57839e-03   -1.82736e+00   -1.82994e+00    8.00091e+00    6.17097e+00
+    0.00000e+00   -1.82649e+00   -1.82649e+00    8.00090e+00    6.17441e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20761e+02    7.83722e-02    1.82736e+00    0.00000e+00
+    3.20761e+02    7.84623e-02    1.82649e+00    0.00000e+00
 
            Step           Time         Lambda
            4630        9.26000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.02391e-03   -1.87673e+00   -1.87975e+00    8.00098e+00    6.12123e+00
+    0.00000e+00   -1.87580e+00   -1.87580e+00    8.00097e+00    6.12516e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20764e+02    7.80850e-02    1.87673e+00    0.00000e+00
+    3.20763e+02    7.81900e-02    1.87580e+00    0.00000e+00
 
            Step           Time         Lambda
            4640        9.28000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.56159e-03   -1.92883e+00   -1.93240e+00    8.00105e+00    6.06866e+00
+    0.00000e+00   -1.92786e+00   -1.92786e+00    8.00104e+00    6.07318e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20767e+02    7.77797e-02    1.92883e+00    0.00000e+00
+    3.20766e+02    7.79027e-02    1.92786e+00    0.00000e+00
 
            Step           Time         Lambda
            4650        9.30000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -4.21372e-03   -1.98392e+00   -1.98813e+00    8.00114e+00    6.01301e+00
+    0.00000e+00   -1.98288e+00   -1.98288e+00    8.00112e+00    6.01823e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20770e+02    7.74542e-02    1.98392e+00    0.00000e+00
+    3.20769e+02    7.75990e-02    1.98288e+00    0.00000e+00
 
            Step           Time         Lambda
            4660        9.32000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -5.00883e-03   -2.04224e+00   -2.04724e+00    8.00123e+00    5.95398e+00
+    0.00000e+00   -2.04114e+00   -2.04114e+00    8.00120e+00    5.96006e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20774e+02    7.71063e-02    2.04224e+00    0.00000e+00
+    3.20773e+02    7.72774e-02    2.04114e+00    0.00000e+00
 
            Step           Time         Lambda
            4670        9.34000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -5.98359e-03   -2.10409e+00   -2.11007e+00    8.00132e+00    5.89125e+00
+    0.00000e+00   -2.10293e+00   -2.10293e+00    8.00129e+00    5.89837e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20777e+02    7.67331e-02    2.10409e+00    0.00000e+00
+    3.20776e+02    7.69365e-02    2.10293e+00    0.00000e+00
 
            Step           Time         Lambda
            4680        9.36000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -7.18547e-03   -2.16980e+00   -2.17699e+00    8.00143e+00    5.82444e+00
+    0.00000e+00   -2.16857e+00   -2.16857e+00    8.00140e+00    5.83283e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20782e+02    7.63313e-02    2.16980e+00    0.00000e+00
+    3.20780e+02    7.65743e-02    2.16857e+00    0.00000e+00
 
            Step           Time         Lambda
            4690        9.38000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -8.67623e-03   -2.23976e+00   -2.24843e+00    8.00155e+00    5.75312e+00
+    0.00000e+00   -2.23844e+00   -2.23844e+00    8.00151e+00    5.76307e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20787e+02    7.58969e-02    2.23976e+00    0.00000e+00
+    3.20785e+02    7.61887e-02    2.23844e+00    0.00000e+00
 
            Step           Time         Lambda
            4700        9.40000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.05369e-02   -2.31437e+00   -2.32491e+00    8.00168e+00    5.67678e+00
+    0.00000e+00   -2.31296e+00   -2.31296e+00    8.00163e+00    5.68866e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20792e+02    7.54251e-02    2.31437e+00    0.00000e+00
+    3.20790e+02    7.57776e-02    2.31296e+00    0.00000e+00
 
            Step           Time         Lambda
            4710        9.42000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.28740e-02   -2.39413e+00   -2.40700e+00    8.00183e+00    5.59483e+00
+    0.00000e+00   -2.39262e+00   -2.39262e+00    8.00176e+00    5.60914e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20798e+02    7.49099e-02    2.39413e+00    0.00000e+00
+    3.20795e+02    7.53382e-02    2.39262e+00    0.00000e+00
 
            Step           Time         Lambda
            4720        9.44000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.58292e-02   -2.47958e+00   -2.49541e+00    8.00200e+00    5.50660e+00
+    0.00000e+00   -2.47796e+00   -2.47796e+00    8.00191e+00    5.52395e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20805e+02    7.43443e-02    2.47958e+00    0.00000e+00
+    3.20801e+02    7.48675e-02    2.47796e+00    0.00000e+00
 
            Step           Time         Lambda
            4730        9.46000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.95907e-02   -2.57135e+00   -2.59094e+00    8.00219e+00    5.41125e+00
+    0.00000e+00   -2.56962e+00   -2.56962e+00    8.00208e+00    5.43247e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20812e+02    7.37192e-02    2.57135e+00    0.00000e+00
+    3.20808e+02    7.43620e-02    2.56962e+00    0.00000e+00
 
            Step           Time         Lambda
            4740        9.48000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.44103e-02   -2.67018e+00   -2.69459e+00    8.00241e+00    5.30782e+00
+    0.00000e+00   -2.66831e+00   -2.66831e+00    8.00227e+00    5.33396e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20821e+02    7.30238e-02    2.67018e+00    0.00000e+00
+    3.20815e+02    7.38178e-02    2.66831e+00    0.00000e+00
 
            Step           Time         Lambda
            4750        9.50000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.06246e-02   -2.77691e+00   -2.80754e+00    8.00266e+00    5.19513e+00
+    0.00000e+00   -2.77489e+00   -2.77489e+00    8.00248e+00    5.22759e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20831e+02    7.22447e-02    2.77691e+00    0.00000e+00
+    3.20824e+02    7.32302e-02    2.77489e+00    0.00000e+00
 
            Step           Time         Lambda
            4760        9.52000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -3.86824e-02   -2.89253e+00   -2.93121e+00    8.00295e+00    5.07174e+00
+    0.00000e+00   -2.89033e+00   -2.89033e+00    8.00272e+00    5.11238e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20843e+02    7.13661e-02    2.89253e+00    0.00000e+00
+    3.20833e+02    7.25938e-02    2.89033e+00    0.00000e+00
 
            Step           Time         Lambda
            4770        9.54000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -4.91753e-02   -3.01819e+00   -3.06737e+00    8.00329e+00    4.93592e+00
+    0.00000e+00   -3.01580e+00   -3.01580e+00    8.00298e+00    4.98718e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20856e+02    7.03700e-02    3.01819e+00    0.00000e+00
+    3.20844e+02    7.19023e-02    3.01580e+00    0.00000e+00
 
            Step           Time         Lambda
            4780        9.56000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -6.28634e-02   -3.15527e+00   -3.21813e+00    8.00369e+00    4.78555e+00
+    0.00000e+00   -3.15266e+00   -3.15266e+00    8.00329e+00    4.85063e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20872e+02    6.92391e-02    3.15527e+00    0.00000e+00
+    3.20856e+02    7.11482e-02    3.15266e+00    0.00000e+00
 
            Step           Time         Lambda
            4790        9.58000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -8.06685e-02   -3.30539e+00   -3.38606e+00    8.00416e+00    4.61810e+00
+    0.00000e+00   -3.30253e+00   -3.30253e+00    8.00364e+00    4.70111e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20891e+02    6.79629e-02    3.30539e+00    0.00000e+00
+    3.20870e+02    7.03225e-02    3.30253e+00    0.00000e+00
 
            Step           Time         Lambda
            4800        9.60000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.03558e-01   -3.47051e+00   -3.57407e+00    8.00470e+00    4.43063e+00
+    0.00000e+00   -3.46736e+00   -3.46736e+00    8.00405e+00    4.53669e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20913e+02    6.65568e-02    3.47051e+00    0.00000e+00
+    3.20887e+02    6.94147e-02    3.46736e+00    0.00000e+00
 
            Step           Time         Lambda
            4810        9.62000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.32116e-01   -3.65300e+00   -3.78512e+00    8.00532e+00    4.22020e+00
+    0.00000e+00   -3.64950e+00   -3.64950e+00    8.00452e+00    4.35502e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20938e+02    6.51077e-02    3.65300e+00    0.00000e+00
+    3.20906e+02    6.84117e-02    3.64950e+00    0.00000e+00
 
            Step           Time         Lambda
            4820        9.64000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.65247e-01   -3.85574e+00   -4.02099e+00    8.00594e+00    3.98495e+00
+    0.00000e+00   -3.85184e+00   -3.85184e+00    8.00507e+00    4.15323e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20963e+02    6.38901e-02    3.85574e+00    0.00000e+00
+    3.20928e+02    6.72978e-02    3.85184e+00    0.00000e+00
 
            Step           Time         Lambda
            4830        9.66000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.96508e-01   -4.08231e+00   -4.27882e+00    8.00637e+00    3.72756e+00
+    0.00000e+00   -4.07794e+00   -4.07794e+00    8.00572e+00    3.92778e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20980e+02    6.36617e-02    4.08231e+00    0.00000e+00
+    3.20954e+02    6.60536e-02    4.07794e+00    0.00000e+00
 
            Step           Time         Lambda
            4840        9.68000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -2.03842e-01   -4.33717e+00   -4.54101e+00    8.00600e+00    3.46499e+00
+    0.00000e+00   -4.33223e+00   -4.33223e+00    8.00650e+00    3.67427e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20965e+02    6.64381e-02    4.33717e+00    0.00000e+00
+    3.20985e+02    6.46546e-02    4.33223e+00    0.00000e+00
 
            Step           Time         Lambda
            4850        9.70000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-   -1.20360e-01   -4.62597e+00   -4.74633e+00    8.00302e+00    3.25669e+00
+    0.00000e+00   -4.62035e+00   -4.62035e+00    8.00744e+00    3.38709e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20845e+02    7.76031e-02    4.62597e+00    0.00000e+00
+    3.21023e+02    6.30703e-02    4.62035e+00    0.00000e+00
 
            Step           Time         Lambda
            4860        9.72000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    2.51833e-01   -4.95597e+00   -4.70413e+00    7.99220e+00    3.28806e+00
+    0.00000e+00   -4.94953e+00   -4.94953e+00    8.00860e+00    3.05907e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.20411e+02    1.11954e-01    4.95597e+00    0.00000e+00
+    3.21069e+02    6.12610e-02    4.94953e+00    0.00000e+00
 
            Step           Time         Lambda
            4870        9.74000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.50911e+00   -5.33667e+00   -3.82756e+00    7.95863e+00    4.13107e+00
+    0.00000e+00   -5.32920e+00   -5.32920e+00    8.01003e+00    2.68083e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.19066e+02    2.12094e-01    5.33667e+00    0.00000e+00
+    3.21127e+02    5.91753e-02    5.32920e+00    0.00000e+00
 
            Step           Time         Lambda
            4880        9.76000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    5.53301e+00   -5.78073e+00   -2.47715e-01    7.86772e+00    7.62001e+00
+    0.00000e+00   -5.77196e+00   -5.77196e+00    8.01184e+00    2.23988e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.15421e+02    5.08698e-01    5.78073e+00    0.00000e+00
+    3.21199e+02    5.67447e-02    5.77196e+00    0.00000e+00
 
            Step           Time         Lambda
            4890        9.78000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.86798e+01   -6.30539e+00    1.23744e+01    7.76933e+00    2.01438e+01
+    0.00000e+00   -6.29497e+00   -6.29497e+00    8.01418e+00    1.71921e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    3.11477e+02    1.43683e+00    6.30539e+00    0.00000e+00
+    3.21293e+02    5.38756e-02    6.29497e+00    0.00000e+00
 
            Step           Time         Lambda
            4900        9.80000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.44582e+01   -6.93479e+00    5.75234e+01    1.03115e+01    6.78349e+01
+    0.00000e+00   -6.92219e+00   -6.92219e+00    8.01726e+00    1.09507e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    4.13394e+02    4.61377e+00    6.93479e+00    0.00000e+00
+    3.21416e+02    5.04379e-02    6.92219e+00    0.00000e+00
 
            Step           Time         Lambda
            4910        9.82000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    2.40451e+02   -7.70379e+00    2.32748e+02    7.10319e+01    3.03779e+02
+    0.00000e+00   -7.68824e+00   -7.68824e+00    8.02145e+00    3.33213e-01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    2.84771e+03    1.71971e+01    7.70378e+00    0.00000e+00
+    3.21584e+02    4.62442e-02    7.68824e+00    0.00000e+00
 
            Step           Time         Lambda
            4920        9.84000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.01538e+03   -8.66460e+00    1.00672e+03    1.53399e+03    2.54070e+03
+    0.00000e+00   -8.64493e+00   -8.64493e+00    8.02736e+00   -6.17574e-01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    6.14984e+04    8.53530e+01    8.66461e+00    0.00000e+00
+    3.21821e+02    4.10142e-02    8.64493e+00    0.00000e+00
 
            Step           Time         Lambda
            4930        9.86000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    5.10182e+03   -9.89922e+00    5.09192e+03    5.05822e+04    5.56742e+04
+    0.00000e+00   -9.87356e+00   -9.87356e+00    8.03608e+00   -1.83748e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    2.02787e+06    9.00947e+02    9.89941e+00    0.00000e+00
+    3.22171e+02    3.43102e-02    9.87356e+00    0.00000e+00
 
            Step           Time         Lambda
            4940        9.88000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    3.25236e+04   -1.15442e+01    3.25120e+04    2.78475e+06    2.81726e+06
+    0.00000e+00   -1.15093e+01   -1.15093e+01    8.04977e+00   -3.45951e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    1.11642e+08    3.29936e+04    1.15449e+01    0.00000e+00
+    3.22720e+02    2.54077e-02    1.15093e+01    0.00000e+00
 
            Step           Time         Lambda
            4950        9.90000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    2.88876e+05   -1.38447e+01    2.88862e+05    3.15100e+08    3.15388e+08
+    0.00000e+00   -1.37946e+01   -1.37946e+01    8.07313e+00   -5.72144e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    1.26325e+10    3.50744e+06    1.38438e+01    0.00000e+00
+    3.23656e+02    1.30166e-02    1.37946e+01    0.00000e+00
 
            Step           Time         Lambda
            4960        9.92000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    4.16390e+06   -1.72904e+01    4.16389e+06    1.01989e+11    1.01993e+11
+    0.00000e+00   -1.72122e+01   -1.72122e+01    8.11831e+00   -9.09393e+00
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    4.08878e+12    1.12932e+09    1.72500e+01    0.00000e+00
+    3.25467e+02   -5.40045e-03    1.72122e+01    0.00000e+00
 
            Step           Time         Lambda
            4970        9.94000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.29166e+08   -2.30195e+01    1.29166e+08    1.73888e+14    1.73888e+14
+    0.00000e+00   -2.28812e+01   -2.28812e+01    8.22555e+00   -1.46556e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    6.97125e+15    1.92499e+12    2.40000e+01    0.00000e+00
+    3.29767e+02   -3.55909e-02    2.28812e+01    0.00000e+00
 
            Step           Time         Lambda
            4980        9.96000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    1.61716e+10   -3.44265e+01    1.61716e+10    6.09603e+18    6.09603e+18
+    0.00000e+00   -3.41181e+01   -3.41181e+01    8.60368e+00   -2.55144e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    2.44393e+20    6.74847e+16    0.00000e+00    0.00000e+00
+    3.44926e+02   -9.36035e-02    3.41181e+01    0.00000e+00
 
            Step           Time         Lambda
            4990        9.98000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    5.95433e+13   -6.82442e+01    5.95433e+13    3.24749e+26    3.24749e+26
+    0.00000e+00   -6.70430e+01   -6.70430e+01    1.23766e+01   -5.46664e+01
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-    1.30194e+28    3.59506e+24    0.00000e+00    0.00000e+00
+    4.96184e+02   -2.34080e-01    6.70430e+01    0.00000e+00
 
            Step           Time         Lambda
            5000       10.00000        0.00000
 
    Energies (kJ/mol)
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.36786e+34   -3.85919e+03    6.36786e+34            nan            nan
+    0.00000e+00   -1.91690e+03   -1.91690e+03    1.84543e+06    1.84352e+06
     Temperature Pressure (bar)  dVpot/dlambda  dEkin/dlambda
-            nan            nan            nan    0.00000e+00
+    7.39845e+07    2.04188e+04    1.91690e+03    0.00000e+00
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -4777,17 +4777,17 @@ Started mdrun on node 0 Wed May 17 19:14:24 2017
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1        501        0.003        0.0     4.4
- Force                  1        501        0.010        0.0    14.5
- Write traj.            1        501        0.011        0.0    16.6
- Update                 1        501        0.001        0.0     0.9
- Rest                   1                   0.043        0.0    63.7
+ Neighbor search        1        501        0.003        0.0     4.0
+ Force                  1        501        0.011        0.0    16.3
+ Write traj.            1        501        0.011        0.0    16.4
+ Update                 1        501        0.000        0.0     0.8
+ Rest                   1                   0.041        0.0    62.6
 -----------------------------------------------------------------------
- Total                  1                   0.067        0.0   100.0
+ Total                  1                   0.065        0.0   100.0
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.020      0.020     99.7
+       Time:      0.020      0.020    100.0
                (Mnbf/s)   (MFlops)   (ns/day)  (hour/ns)
-Performance:      0.000     26.220  21333.388      0.001
-Finished mdrun on node 0 Wed May 17 19:14:24 2017
+Performance:      0.000     27.004  21971.241      0.001
+Finished mdrun on node 0 Tue May 23 13:27:07 2017

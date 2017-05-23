@@ -21,19 +21,19 @@ nstenergy       = 10
 nstlog          = 500
 
 ; NEIGHBOR SEARCHING
-nstlist         = 1
-ns_type         = grid
+nstlist         = 0
+ns_type         = simple
 pbc             = xyz
 rlist           = 0.9
 
 ; ELECTROSTATICS
-coulombtype     = cut-off
+coulombtype     = PME
 rcoulomb        = 0.9
 
 ; EWALD stuff
 fourierspacing  = 0.10
 pme_order       = 4
-ewald_rtol      = 1e-5
+ewald_rtol      = 1e-6
 ewald_geometry  = 3d
 optimize_fft    = no
 
