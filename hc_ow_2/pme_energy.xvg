@@ -1,10 +1,10 @@
-# This file was created Mon May 22 16:07:16 2017
+# This file was created Mon May 22 20:00:40 2017
 # by the following command:
 # g_energy -f pme.edr -o pme_energy.xvg 
 #
 # g_energy is part of G R O M A C S:
 #
-# Great Red Owns Many ACres of Sand 
+# Green Red Orange Magenta Azure Cyan Skyblue
 #
 @    title "Gromacs Energies"
 @    xaxis  label "Time (ps)"

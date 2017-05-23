@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: onbekend (0)
-;	On host: onbekend
-;	At date: Mon May 22 16:07:15 2017
+;	By user: nick (1000)
+;	On host: nick-ThinkPad-T440p
+;	At date: Mon May 22 20:00:40 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -267,7 +267,7 @@ dihre-fc                 = 1000
 
 ; Free energy control stuff
 free_energy              = yes
-init_lambda              = 0.0
+init_lambda              = 0.5
 delta-lambda             = 0
 foreign_lambda           = 0.0 0.5 1.0
 sc-alpha                 = 0
