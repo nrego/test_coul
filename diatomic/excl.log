@@ -1,12 +1,12 @@
-Log file opened on Fri May 26 15:57:24 2017
-Host: huntsman-ve565-0476.apn.wlan.upenn.edu  pid: 10698  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
-nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
+Log file opened on Fri May 26 16:12:14 2017
+Host: nick-ThinkPad-T440p  pid: 12572  nodeid: 0  nnodes:  1
+The Gromacs distribution was built @TMP_TIME@ by
+nick@nick-ThinkPad-T440p [CMAKE] (@TMP_MACHINE@)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                      GROup of MAchos and Cynical Suckers
+           Glycine aRginine prOline Methionine Alanine Cystine Serine
 
                             :-)  VERSION 4.5.3  (-:
 
@@ -183,7 +183,7 @@ Input Parameters:
    lincs_warnangle      = 30
    lincs_iter           = 1
    bd_fric              = 0
-   ld_seed              = 10697
+   ld_seed              = 12571
    cos_accel            = 0
    deform (3x3):
       deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
@@ -259,7 +259,7 @@ Max number of graph edges per atom is 1
 Total number of graph edges is 2
 Initial temperature: 0 K
 
-Started mdrun on node 0 Fri May 26 15:57:24 2017
+Started mdrun on node 0 Fri May 26 16:12:14 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
@@ -276,450 +276,450 @@ Grid: 2 x 2 x 2 cells
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    9.72901e-02    0.00000e+00    0.00000e+00   -1.86028e-01   -8.87384e-02
+    5.33077e-01    0.00000e+00    0.00000e+00   -1.93650e-01    3.39427e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -8.87384e-02    0.00000e+00    2.20726e+01
+    0.00000e+00    3.39427e-01    0.00000e+00   -5.30745e+01
 
            Step           Time         Lambda
             200        0.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.41286e+00    0.00000e+00    0.00000e+00   -1.76741e-01    2.23612e+00
+    2.60555e+00    0.00000e+00    0.00000e+00   -1.77000e-01    2.42855e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    2.23612e+00    0.00000e+00    1.07677e+02
+    0.00000e+00    2.42855e+00    0.00000e+00    1.11765e+02
 
            Step           Time         Lambda
             300        0.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.95506e+00    0.00000e+00    0.00000e+00   -1.75275e-01    2.77978e+00
+    2.31549e+00    0.00000e+00    0.00000e+00   -1.99491e-01    2.11600e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    2.77978e+00    0.00000e+00    1.18778e+02
+    0.00000e+00    2.11600e+00    0.00000e+00   -1.12168e+02
 
            Step           Time         Lambda
             400        0.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.18650e+00    0.00000e+00    0.00000e+00   -1.95399e-01    9.91096e-01
+    8.08046e+00    0.00000e+00    0.00000e+00   -2.09203e-01    7.87126e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    9.91096e-01    0.00000e+00   -7.96813e+01
+    0.00000e+00    7.87126e+00    0.00000e+00   -2.14648e+02
 
            Step           Time         Lambda
             500        1.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.04409e+00    0.00000e+00    0.00000e+00   -1.97872e-01    1.84622e+00
+    1.31064e-01    0.00000e+00    0.00000e+00   -1.85480e-01   -5.44163e-02
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.84622e+00    0.00000e+00   -1.05227e+02
+    0.00000e+00   -5.44163e-02    0.00000e+00    2.56118e+01
 
            Step           Time         Lambda
             600        1.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.36123e-02    0.00000e+00    0.00000e+00   -1.88904e-01   -1.55292e-01
+    1.76773e+00    0.00000e+00    0.00000e+00   -1.77906e-01    1.58982e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.55292e-01    0.00000e+00   -1.32786e+01
+    0.00000e+00    1.58982e+00    0.00000e+00    9.25593e+01
 
            Step           Time         Lambda
             700        1.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.26363e+00    0.00000e+00    0.00000e+00   -1.95630e-01    1.06800e+00
+    3.05310e-02    0.00000e+00    0.00000e+00   -1.85813e-01   -1.55282e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.06800e+00    0.00000e+00   -8.22845e+01
+    0.00000e+00   -1.55282e-01    0.00000e+00    1.23454e+01
 
            Step           Time         Lambda
             800        1.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.43409e+00    0.00000e+00    0.00000e+00   -1.74068e-01    3.26003e+00
+    2.80976e+00    0.00000e+00    0.00000e+00   -1.75890e-01    2.63387e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    3.26003e+00    0.00000e+00    1.27704e+02
+    0.00000e+00    2.63387e+00    0.00000e+00    1.15921e+02
 
            Step           Time         Lambda
             900        1.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.84125e-01    0.00000e+00    0.00000e+00   -1.90076e-01   -5.95090e-03
+    1.19089e-01    0.00000e+00    0.00000e+00   -1.85181e-01   -6.60920e-02
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -5.95090e-03    0.00000e+00   -3.10668e+01
+    0.00000e+00   -6.60920e-02    0.00000e+00    2.44150e+01
 
            Step           Time         Lambda
            1000        2.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.32980e-01    0.00000e+00    0.00000e+00   -1.89673e-01    4.33063e-02
+    5.44424e-03    0.00000e+00    0.00000e+00   -1.87325e-01   -1.81880e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    4.33063e-02    0.00000e+00   -3.49726e+01
+    0.00000e+00   -1.81880e-01    0.00000e+00    5.16351e+00
 
            Step           Time         Lambda
            1100        2.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.01969e+00    0.00000e+00    0.00000e+00   -1.93826e-01    8.25862e-01
+    2.85910e-01    0.00000e+00    0.00000e+00   -1.83868e-01    1.02042e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    8.25862e-01    0.00000e+00   -7.37678e+01
+    0.00000e+00    1.02042e-01    0.00000e+00    3.77471e+01
 
            Step           Time         Lambda
            1200        2.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    7.65447e-01    0.00000e+00    0.00000e+00   -1.92716e-01    5.72732e-01
+    3.08805e+00    0.00000e+00    0.00000e+00   -2.00760e-01    2.88729e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.72732e-01    0.00000e+00   -6.37675e+01
+    0.00000e+00    2.88729e+00    0.00000e+00   -1.30099e+02
 
            Step           Time         Lambda
            1300        2.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.98276e-03    0.00000e+00    0.00000e+00   -1.87333e-01   -1.85350e-01
+    8.29591e-02    0.00000e+00    0.00000e+00   -1.89787e-01   -1.06828e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.85350e-01    0.00000e+00   -3.30060e+00
+    0.00000e+00   -1.06828e-01    0.00000e+00   -2.08322e+01
 
            Step           Time         Lambda
            1400        2.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    7.18570e+00    0.00000e+00    0.00000e+00   -2.06628e-01    6.97908e+00
+    4.71520e-01    0.00000e+00    0.00000e+00   -1.83090e-01    2.88430e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    6.97908e+00    0.00000e+00   -2.01825e+02
+    0.00000e+00    2.88430e-01    0.00000e+00    4.83630e+01
 
            Step           Time         Lambda
            1500        3.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    5.47844e-02    0.00000e+00    0.00000e+00   -1.85817e-01   -1.31032e-01
+    6.43977e-02    0.00000e+00    0.00000e+00   -1.86559e-01   -1.22161e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.31032e-01    0.00000e+00    1.65602e+01
+    0.00000e+00   -1.22161e-01    0.00000e+00    1.79612e+01
 
            Step           Time         Lambda
            1600        3.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.03698e-02    0.00000e+00    0.00000e+00   -1.88990e-01   -1.78620e-01
+    1.18846e-02    0.00000e+00    0.00000e+00   -1.87443e-01   -1.75558e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.78620e-01    0.00000e+00   -7.40255e+00
+    0.00000e+00   -1.75558e-01    0.00000e+00    7.67768e+00
 
            Step           Time         Lambda
            1700        3.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.27987e+00    0.00000e+00    0.00000e+00   -1.79846e-01    1.10002e+00
+    9.01652e-01    0.00000e+00    0.00000e+00   -1.95571e-01    7.06081e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.10002e+00    0.00000e+00    7.90580e+01
+    0.00000e+00    7.06081e-01    0.00000e+00   -6.92801e+01
 
            Step           Time         Lambda
            1800        3.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.19189e+00    0.00000e+00    0.00000e+00   -1.95588e-01    9.96303e-01
+    1.59165e-01    0.00000e+00    0.00000e+00   -1.85744e-01   -2.65792e-02
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    9.96303e-01    0.00000e+00   -7.98571e+01
+    0.00000e+00   -2.65792e-02    0.00000e+00    2.82180e+01
 
            Step           Time         Lambda
            1900        3.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    4.79993e-01    0.00000e+00    0.00000e+00   -1.82372e-01    2.97621e-01
+    2.41654e+00    0.00000e+00    0.00000e+00   -2.00126e-01    2.21641e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    2.97621e-01    0.00000e+00    4.87882e+01
+    0.00000e+00    2.21641e+00    0.00000e+00   -1.14656e+02
 
            Step           Time         Lambda
            2000        4.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.48784e+00    0.00000e+00    0.00000e+00   -1.96840e-01    1.29100e+00
+    1.01825e+00    0.00000e+00    0.00000e+00   -1.81411e-01    8.36837e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.29100e+00    0.00000e+00   -8.94289e+01
+    0.00000e+00    8.36837e-01    0.00000e+00    7.06772e+01
 
            Step           Time         Lambda
            2100        4.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.93495e-01    0.00000e+00    0.00000e+00   -1.85040e-01    8.45405e-03
+    5.25864e+00    0.00000e+00    0.00000e+00   -2.04811e-01    5.05383e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    8.45405e-03    0.00000e+00    3.10933e+01
+    0.00000e+00    5.05383e+00    0.00000e+00   -1.71436e+02
 
            Step           Time         Lambda
            2200        4.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.31852e+00    0.00000e+00    0.00000e+00   -1.74933e-01    3.14359e+00
+    6.16784e-01    0.00000e+00    0.00000e+00   -1.82519e-01    4.34265e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    3.14359e+00    0.00000e+00    1.25620e+02
+    0.00000e+00    4.34265e-01    0.00000e+00    5.52217e+01
 
            Step           Time         Lambda
            2300        4.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.09724e-02    0.00000e+00    0.00000e+00   -1.87469e-01   -1.56496e-01
+    8.42467e-01    0.00000e+00    0.00000e+00   -1.81246e-01    6.61221e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.56496e-01    0.00000e+00    1.24452e+01
+    0.00000e+00    6.61221e-01    0.00000e+00    6.43870e+01
 
            Step           Time         Lambda
            2400        4.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.43035e+00    0.00000e+00    0.00000e+00   -1.96997e-01    1.23336e+00
+    1.80762e+00    0.00000e+00    0.00000e+00   -1.78109e-01    1.62951e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.23336e+00    0.00000e+00   -8.76425e+01
+    0.00000e+00    1.62951e+00    0.00000e+00    9.35717e+01
 
            Step           Time         Lambda
            2500        5.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.78606e+00    0.00000e+00    0.00000e+00   -1.98071e-01    1.58799e+00
+    3.14578e-01    0.00000e+00    0.00000e+00   -1.91141e-01    1.23437e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.58799e+00    0.00000e+00   -9.81823e+01
+    0.00000e+00    1.23437e-01    0.00000e+00   -4.06716e+01
 
            Step           Time         Lambda
            2600        5.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    7.86163e-01    0.00000e+00    0.00000e+00   -1.82450e-01    6.03713e-01
+    5.58618e-01    0.00000e+00    0.00000e+00   -1.92857e-01    3.65761e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    6.03713e-01    0.00000e+00    6.22424e+01
+    0.00000e+00    3.65761e-01    0.00000e+00   -5.43508e+01
 
            Step           Time         Lambda
            2700        5.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    8.93596e-01    0.00000e+00    0.00000e+00   -1.82036e-01    7.11560e-01
+    7.42697e-01    0.00000e+00    0.00000e+00   -1.93684e-01    5.49014e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    7.11560e-01    0.00000e+00    6.62890e+01
+    0.00000e+00    5.49014e-01    0.00000e+00   -6.27961e+01
 
            Step           Time         Lambda
            2800        5.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    5.22918e+00    0.00000e+00    0.00000e+00   -2.05358e-01    5.02382e+00
+    4.16090e+00    0.00000e+00    0.00000e+00   -2.01647e-01    3.95925e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.02382e+00    0.00000e+00   -1.70931e+02
+    0.00000e+00    3.95925e+00    0.00000e+00   -1.51803e+02
 
            Step           Time         Lambda
            2900        5.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.75357e-03    0.00000e+00    0.00000e+00   -1.87700e-01   -1.84947e-01
+    2.73263e-03    0.00000e+00    0.00000e+00   -1.86721e-01   -1.83988e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.84947e-01    0.00000e+00    3.64457e+00
+    0.00000e+00   -1.83988e-01    0.00000e+00    3.62148e+00
 
            Step           Time         Lambda
            3000        6.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.62031e-01    0.00000e+00    0.00000e+00   -1.85192e-01   -2.31608e-02
+    8.96366e-01    0.00000e+00    0.00000e+00   -1.94118e-01    7.02248e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -2.31608e-02    0.00000e+00    2.84673e+01
+    0.00000e+00    7.02248e-01    0.00000e+00   -6.90870e+01
 
            Step           Time         Lambda
            3100        6.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.38122e-02    0.00000e+00    0.00000e+00   -1.89493e-01   -1.65681e-01
+    3.88502e+00    0.00000e+00    0.00000e+00   -1.74278e-01    3.71074e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.65681e-01    0.00000e+00   -1.11755e+01
+    0.00000e+00    3.71074e+00    0.00000e+00    1.35521e+02
 
            Step           Time         Lambda
            3200        6.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    6.82490e-01    0.00000e+00    0.00000e+00   -1.81902e-01    5.00588e-01
+    2.70312e-01    0.00000e+00    0.00000e+00   -1.91433e-01    7.88790e-02
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.00588e-01    0.00000e+00    5.80484e+01
+    0.00000e+00    7.88790e-02    0.00000e+00   -3.76792e+01
 
            Step           Time         Lambda
            3300        6.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.81021e-01    0.00000e+00    0.00000e+00   -1.91062e-01    1.89959e-01
+    1.95462e-01    0.00000e+00    0.00000e+00   -1.91012e-01    4.44987e-03
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.89959e-01    0.00000e+00   -4.48018e+01
+    0.00000e+00    4.44987e-03    0.00000e+00   -3.20089e+01
 
            Step           Time         Lambda
            3400        6.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    4.36138e-02    0.00000e+00    0.00000e+00   -1.87983e-01   -1.44369e-01
+    2.87652e+00    0.00000e+00    0.00000e+00   -1.99402e-01    2.67712e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.44369e-01    0.00000e+00   -1.51165e+01
+    0.00000e+00    2.67712e+00    0.00000e+00   -1.25429e+02
 
            Step           Time         Lambda
            3500        7.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.41919e-01    0.00000e+00    0.00000e+00   -1.90305e-01    5.16139e-02
+    4.05318e-01    0.00000e+00    0.00000e+00   -1.91264e-01    2.14054e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.16139e-02    0.00000e+00   -3.56354e+01
+    0.00000e+00    2.14054e-01    0.00000e+00   -4.62208e+01
 
            Step           Time         Lambda
            3600        7.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    7.64370e-01    0.00000e+00    0.00000e+00   -1.80511e-01    5.83860e-01
+    4.56157e-01    0.00000e+00    0.00000e+00   -1.81685e-01    2.74472e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.83860e-01    0.00000e+00    6.13747e+01
+    0.00000e+00    2.74472e-01    0.00000e+00    4.75693e+01
 
            Step           Time         Lambda
            3700        7.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    5.30800e-01    0.00000e+00    0.00000e+00   -1.82250e-01    3.48549e-01
+    7.24255e+00    0.00000e+00    0.00000e+00   -2.06451e-01    7.03610e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    3.48549e-01    0.00000e+00    5.12780e+01
+    0.00000e+00    7.03610e+00    0.00000e+00   -2.02667e+02
 
            Step           Time         Lambda
            3800        7.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    4.53017e-02    0.00000e+00    0.00000e+00   -1.89915e-01   -1.44613e-01
+    1.76386e+00    0.00000e+00    0.00000e+00   -1.76525e-01    1.58734e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.44613e-01    0.00000e+00   -1.53919e+01
+    0.00000e+00    1.58734e+00    0.00000e+00    9.24511e+01
 
            Step           Time         Lambda
            3900        7.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.13595e-01    0.00000e+00    0.00000e+00   -1.85625e-01    2.79697e-02
+    2.37788e-02    0.00000e+00    0.00000e+00   -1.86996e-01   -1.63218e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    2.79697e-02    0.00000e+00    3.26689e+01
+    0.00000e+00   -1.63218e-01    0.00000e+00   -1.11857e+01
 
            Step           Time         Lambda
            4000        8.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    6.20426e-02    0.00000e+00    0.00000e+00   -1.86525e-01   -1.24483e-01
+    2.45947e+00    0.00000e+00    0.00000e+00   -1.97911e-01    2.26156e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.24483e-01    0.00000e+00    1.76303e+01
+    0.00000e+00    2.26156e+00    0.00000e+00   -1.15716e+02
 
            Step           Time         Lambda
            4100        8.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.47880e-01    0.00000e+00    0.00000e+00   -1.84001e-01    6.38789e-02
+    2.46290e-03    0.00000e+00    0.00000e+00   -1.87308e-01   -1.84845e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    6.38789e-02    0.00000e+00    3.51669e+01
+    0.00000e+00   -1.84845e-01    0.00000e+00   -3.67116e+00
 
            Step           Time         Lambda
            4200        8.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.02326e+00    0.00000e+00    0.00000e+00   -1.79426e-01    8.43832e-01
+    3.65458e-01    0.00000e+00    0.00000e+00   -1.82840e-01    1.82618e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    8.43832e-01    0.00000e+00    7.08355e+01
+    0.00000e+00    1.82618e-01    0.00000e+00    4.26268e+01
 
            Step           Time         Lambda
            4300        8.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    7.71120e-01    0.00000e+00    0.00000e+00   -1.93330e-01    5.77790e-01
+    2.72597e-01    0.00000e+00    0.00000e+00   -1.83440e-01    8.91571e-02
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    5.77790e-01    0.00000e+00   -6.40052e+01
+    0.00000e+00    8.91571e-02    0.00000e+00    3.68598e+01
 
            Step           Time         Lambda
            4400        8.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.37255e-02    0.00000e+00    0.00000e+00   -1.86421e-01   -1.62696e-01
+    6.72946e-02    0.00000e+00    0.00000e+00   -1.85578e-01   -1.18284e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.62696e-01    0.00000e+00    1.08734e+01
+    0.00000e+00   -1.18284e-01    0.00000e+00    1.83512e+01
 
            Step           Time         Lambda
            4500        9.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    9.49544e-01    0.00000e+00    0.00000e+00   -1.94784e-01    7.54760e-01
+    7.19465e-03    0.00000e+00    0.00000e+00   -1.87104e-01   -1.79910e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    7.54760e-01    0.00000e+00   -7.11342e+01
+    0.00000e+00   -1.79910e-01    0.00000e+00    5.94199e+00
 
            Step           Time         Lambda
            4600        9.20000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    2.86078e-01    0.00000e+00    0.00000e+00   -1.83386e-01    1.02692e-01
+    3.50616e-01    0.00000e+00    0.00000e+00   -1.83441e-01    1.67175e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.02692e-01    0.00000e+00    3.77561e+01
+    0.00000e+00    1.67175e-01    0.00000e+00    4.17593e+01
 
            Step           Time         Lambda
            4700        9.40000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    4.08012e-01    0.00000e+00    0.00000e+00   -1.91985e-01    2.16027e-01
+    8.03569e-01    0.00000e+00    0.00000e+00   -1.80811e-01    6.22758e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    2.16027e-01    0.00000e+00   -4.63711e+01
+    0.00000e+00    6.22758e-01    0.00000e+00    6.29005e+01
 
            Step           Time         Lambda
            4800        9.60000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    1.95471e+00    0.00000e+00    0.00000e+00   -1.77782e-01    1.77693e+00
+    5.54097e-01    0.00000e+00    0.00000e+00   -1.82014e-01    3.72082e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    1.77693e+00    0.00000e+00    9.72050e+01
+    0.00000e+00    3.72082e-01    0.00000e+00    5.23684e+01
 
            Step           Time         Lambda
            4900        9.80000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.77096e+00    0.00000e+00    0.00000e+00   -2.00342e-01    3.57062e+00
+    3.11131e+00    0.00000e+00    0.00000e+00   -2.01131e-01    2.91018e+00
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00    3.57062e+00    0.00000e+00   -1.44254e+02
+    0.00000e+00    2.91018e+00    0.00000e+00   -1.30610e+02
 
            Step           Time         Lambda
            5000       10.00000        0.00000
 
    Energies (kJ/mol)
            Bond        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential
-    3.05686e-03    0.00000e+00    0.00000e+00   -1.87153e-01   -1.84096e-01
+    1.47532e-02    0.00000e+00    0.00000e+00   -1.87660e-01   -1.72907e-01
     Kinetic En.   Total Energy    Temperature Pressure (bar)
-    0.00000e+00   -1.84096e-01    0.00000e+00   -4.07026e+00
+    0.00000e+00   -1.72907e-01    0.00000e+00    8.55372e+00
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -735,7 +735,7 @@ Grid: 2 x 2 x 2 cells
  Gather F Bspline                         0.022032           0.132     0.1
  3D-FFT                                  10.580052          84.640    85.3
  Solve PME                                0.224400          14.362    14.5
- NS-Pairs                                 0.000155           0.003     0.0
+ NS-Pairs                                 0.000153           0.003     0.0
  Reset In Box                             0.000102           0.000     0.0
  Shift-X                                  0.000204           0.001     0.0
  CG-CoM                                   0.000102           0.000     0.0
@@ -752,23 +752,23 @@ Grid: 2 x 2 x 2 cells
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1         51        0.001        0.0     0.9
- Force                  1         51        0.001        0.0     0.7
- PME mesh               1         51        0.077        0.0    88.3
- Write traj.            1         51        0.002        0.0     2.0
- Update                 1         51        0.000        0.0     0.4
- Rest                   1                   0.007        0.0     7.7
+ Neighbor search        1         51        0.000        0.0     1.2
+ Force                  1         51        0.000        0.0     0.9
+ PME mesh               1         51        0.021        0.0    74.3
+ Write traj.            1         51        0.001        0.0     2.7
+ Update                 1         51        0.000        0.0     0.5
+ Rest                   1                   0.006        0.0    20.5
 -----------------------------------------------------------------------
- Total                  1                   0.087        0.0   100.0
+ Total                  1                   0.029        0.0   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1        102        0.026        0.0    30.4
- PME 3D-FFT             1        102        0.008        0.0     8.9
- PME solve              1         51        0.042        0.0    48.8
+ PME spread/gather      1        102        0.003        0.0    10.7
+ PME 3D-FFT             1        102        0.007        0.0    24.0
+ PME solve              1         51        0.011        0.0    39.2
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.026      0.026     99.4
+       Time:      0.010      0.011     97.3
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.000      3.792  33021.508      0.001
-Finished mdrun on node 0 Fri May 26 15:57:24 2017
+Performance:      0.000      9.614  83713.346      0.000
+Finished mdrun on node 0 Fri May 26 16:12:14 2017

@@ -15,18 +15,15 @@ from mdtools import dr
 
 from math import erf, erfc
 
-for_lmbdas = [0.5,1.0]
+for_lmbdas = [1.0]
 n_for_lmbdas = len(for_lmbdas)
 this_lmbda = 0.0
 
 atm_indices = range(2)
 alc_indices = range(2)
 
-excls = {0: (),
-         1: ()}
-
-atmtypes = [('DUM_HC', 'DUM_HC'),
-            ('DUM_OW_spc', 'DUM_OW_spc')]
+excls = {0: (0),
+         1: (1)}
 
 
 charges = {0:(0.5, 0.0),
