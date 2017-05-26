@@ -6,7 +6,7 @@
 integrator      = md
 dt              = 0.002
 ; set to taste
-nsteps          = 5000
+nsteps          = 1000
 
 comm-mode       = None
 nstcomm         = 10
@@ -21,25 +21,25 @@ nstenergy       = 10
 nstlog          = 500
 
 ; NEIGHBOR SEARCHING
-nstlist         = 0
-ns_type         = simple
+nstlist         = 1
+ns_type         = grid
 pbc             = xyz
-rlist           = 0.9
+rlist           = 1.0
 
 ; ELECTROSTATICS
-coulombtype     = PME
-rcoulomb        = 0.9
+coulombtype     = cut-off
+rcoulomb        = 1.0
 
 ; EWALD stuff
-fourierspacing  = 0.10
+fourierspacing  = 0.20
 pme_order       = 4
-ewald_rtol      = 1e-6
+ewald_rtol      = 1e-5
 ewald_geometry  = 3d
 optimize_fft    = no
 
 ; VDW
 vdwtype         = cut-off
-rvdw            = 0.9
+rvdw            = 1.0
 DispCorr        = no
 
 ; TEMPERATURE COUPLING

@@ -1,10 +1,10 @@
-# This file was created Tue May 23 12:04:18 2017
+# This file was created Tue May 23 15:56:37 2017
 # by the following command:
 # mdrun -deffnm no_pme -rerun traj.trr -reprod -nt 1 
 #
 # mdrun is part of G R O M A C S:
 #
-# Green Red Orange Magenta Azure Cyan Skyblue
+# GROningen Mixture of Alchemy and Childrens' Stories
 #
 @    title "dH/d\xl\f{}, \xD\f{}H"
 @    xaxis  label "Time (ps)"
@@ -21,7 +21,7 @@
 @ s1 legend "\xD\f{}H \xl\f{} 0"
 @ s2 legend "\xD\f{}H \xl\f{} 0.5"
 @ s3 legend "\xD\f{}H \xl\f{} 1"
-0.0000 nan nan nan nan
+0.0000 -nan -nan -nan -nan
 0.0200 69.4686 0 34.7343 69.4686
 0.0400 34.7343 0 17.3672 34.7343
 0.0600 23.1562 0 11.5781 23.1562

@@ -61,7 +61,7 @@ print("self-self Ewald correction: {} (kJ/mol)".format(ewald_self_this))
 
 box = univ.dimensions[:3] / 10.0
 
-n_waves = 15
+n_waves = 7
 waves = []
 print("generating wave vectors for n_waves: {}!".format(n_waves))
 for n_wave in range(0,n_waves+1):

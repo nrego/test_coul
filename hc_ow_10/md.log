@@ -1,12 +1,12 @@
-Log file opened on Tue May 23 13:24:02 2017
-Host: huntsman-ve565-2353.apn.wlan.upenn.edu  pid: 7388  nodeid: 0  nnodes:  1
-The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
-nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
+Log file opened on Tue May 23 15:12:35 2017
+Host: nick-ThinkPad-T440p  pid: 27180  nodeid: 0  nnodes:  1
+The Gromacs distribution was built @TMP_TIME@ by
+nick@nick-ThinkPad-T440p [CMAKE] (@TMP_MACHINE@)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-                  Gromacs Runs On Most of All Computer Systems
+              GROningen Mixture of Alchemy and Childrens' Stories
 
                             :-)  VERSION 4.5.3  (-:
 
@@ -62,10 +62,10 @@ Comp. Phys. Comm. 91 (1995) pp. 43-56
 
 Input Parameters:
    integrator           = md
-   nsteps               = 5000
+   nsteps               = 1000
    init_step            = 0
-   ns_type              = Simple
-   nstlist              = 0
+   ns_type              = Grid
+   nstlist              = 1
    ndelta               = 2
    nstcomm              = 0
    comm_mode            = None
@@ -73,17 +73,17 @@ Input Parameters:
    nstxout              = 10
    nstvout              = 10
    nstfout              = 10
-   nstcalcenergy        = 10
+   nstcalcenergy        = 1
    nstenergy            = 10
    nstxtcout            = 0
    init_t               = 0
    delta_t              = 0.002
    xtcprec              = 1000
-   nkx                  = 100
-   nky                  = 100
-   nkz                  = 100
+   nkx                  = 0
+   nky                  = 0
+   nkz                  = 0
    pme_order            = 4
-   ewald_rtol           = 1e-06
+   ewald_rtol           = 1e-05
    ewald_geometry       = 0
    epsilon_surface      = 0
    optimize_fft         = FALSE
@@ -115,15 +115,15 @@ Input Parameters:
       posres_comB[1]= 0.00000e+00
       posres_comB[2]= 0.00000e+00
    andersen_seed        = 815131
-   rlist                = 0.9
-   rlistlong            = 0.9
+   rlist                = 1
+   rlistlong            = 1
    rtpi                 = 0.05
-   coulombtype          = PME
+   coulombtype          = Cut-off
    rcoulomb_switch      = 0
-   rcoulomb             = 0.9
+   rcoulomb             = 1
    vdwtype              = Cut-off
    rvdw_switch          = 0
-   rvdw                 = 0.9
+   rvdw                 = 1
    epsilon_r            = 1
    epsilon_rf           = 1
    tabext               = 1
@@ -224,26 +224,10 @@ ann_npoints:           0
    scalefactor          = 1
 qm_opts:
    ngQM                 = 0
-Table routines are used for coulomb: TRUE
+Table routines are used for coulomb: FALSE
 Table routines are used for vdw:     FALSE
-Will do PME sum in reciprocal space.
-
-++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-U. Essman, L. Perela, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
-A smooth particle mesh Ewald method
-J. Chem. Phys. 103 (1995) pp. 8577-8592
--------- -------- --- Thank You --- -------- --------
-
-Will do ordinary reciprocal space Ewald sum.
-Using a Gaussian width (1/beta) of 0.260197 nm for Ewald
-Cut-off's:   NS: 0.9   Coulomb: 0.9   LJ: 0.9
+Cut-off's:   NS: 1   Coulomb: 1   LJ: 1
 System total charge: 0.000
-Generated table with 950 data points for Ewald.
-Tabscale = 500 points/nm
-Generated table with 950 data points for LJ6.
-Tabscale = 500 points/nm
-Generated table with 950 data points for LJ12.
-Tabscale = 500 points/nm
 Configuring nonbonded kernels...
 Configuring standard C nonbonded kernels...
 Testing x86_64 SSE2 support... present.
@@ -253,123 +237,52 @@ Removing pbc first time
 There are: 2 Atoms
 Max number of connections per atom is 0
 Total number of connections is 0
-Initial temperature: 320.712 K
+Initial temperature: 8017.81 K
 
-Started mdrun on node 0 Tue May 23 13:24:02 2017
+Started mdrun on node 0 Tue May 23 15:12:35 2017
 
            Step           Time         Lambda
               0        0.00000        0.00000
 
+Grid: 10 x 10 x 10 cells
    Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
+        LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
+    0.00000e+00    0.00000e+00    0.00000e+00    1.99993e+02    1.99993e+02
+    Temperature Pressure (bar)
+    8.01781e+03    2.21397e+00
 
            Step           Time         Lambda
             500        1.00000        0.00000
 
    Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
+        LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
+    0.00000e+00    0.00000e+00    0.00000e+00    1.99993e+02    1.99993e+02
+    Temperature Pressure (bar)
+    8.01781e+03    2.21397e+00
 
            Step           Time         Lambda
            1000        2.00000        0.00000
 
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           1500        3.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           2000        4.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           2500        5.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           3000        6.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           3500        7.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           4000        8.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           4500        9.00000        0.00000
-
-   Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
-
-           Step           Time         Lambda
-           5000       10.00000        0.00000
-
-Writing checkpoint, step 5000 at Tue May 23 13:27:06 2017
+Writing checkpoint, step 1000 at Tue May 23 15:12:35 2017
 
 
    Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
+        LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
+    0.00000e+00    0.00000e+00    0.00000e+00    1.99993e+02    1.99993e+02
+    Temperature Pressure (bar)
+    8.01781e+03    2.21397e+00
 
 	<======  ###############  ==>
 	<====  A V E R A G E S  ====>
 	<==  ###############  ======>
 
-	Statistics over 5001 steps using 501 frames
+	Statistics over 1001 steps using 1001 frames
 
    Energies (kJ/mol)
-        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
-    0.00000e+00    0.00000e+00    0.00000e+00    0.00000e+00    7.99970e+00
-   Total Energy    Temperature Pressure (bar)
-    7.99970e+00    3.20712e+02    8.85588e-02
+        LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
+    0.00000e+00    0.00000e+00    0.00000e+00    1.99993e+02    1.99993e+02
+    Temperature Pressure (bar)
+    8.01781e+03    2.21397e+00
 
    Total Virial (kJ/mol)
     0.00000e+00    0.00000e+00    0.00000e+00
@@ -377,7 +290,7 @@ Writing checkpoint, step 5000 at Tue May 23 13:27:06 2017
     0.00000e+00    0.00000e+00    0.00000e+00
 
    Pressure (bar)
-    2.65676e-01    0.00000e+00    0.00000e+00
+    6.64191e+00    0.00000e+00    0.00000e+00
     0.00000e+00    0.00000e+00    0.00000e+00
     0.00000e+00    0.00000e+00    0.00000e+00
 
@@ -393,18 +306,13 @@ Writing checkpoint, step 5000 at Tue May 23 13:27:06 2017
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- Calc Weights                             0.030006           1.080     0.0
- Spread Q Bspline                         0.640128           1.280     0.0
- Gather F Bspline                         0.640128           3.841     0.0
- 3D-FFT                              199355.543136     1594844.345    90.7
- Solve PME                             2550.510000      163232.640     9.3
- NS-Pairs                                 0.000003           0.000     0.0
- Reset In Box                             0.000002           0.000     0.0
- CG-CoM                                   0.000002           0.000     0.0
- Virial                                   0.023547           0.424     0.0
- Calc-Ekin                                0.010004           0.270     0.0
+ NS-Pairs                                 0.002203           0.046     4.8
+ Reset In Box                             0.002002           0.006     0.6
+ CG-CoM                                   0.002002           0.006     0.6
+ Virial                                   0.047047           0.847    88.3
+ Calc-Ekin                                0.002004           0.054     5.6
 -----------------------------------------------------------------------------
- Total                                                 1758083.880   100.0
+ Total                                                       0.959   100.0
 -----------------------------------------------------------------------------
 
 
@@ -412,24 +320,17 @@ Writing checkpoint, step 5000 at Tue May 23 13:27:06 2017
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1          1        0.001        0.0     0.0
- Force                  1       5001        0.087        0.0     0.0
- PME mesh               1       5001      607.707      184.6    99.9
- Write traj.            1        501        0.062        0.0     0.0
- Update                 1       5001        0.028        0.0     0.0
- Rest                   1                   0.192        0.1     0.0
+ Neighbor search        1       1001        0.015        0.0    24.2
+ Force                  1       1001        0.001        0.0     1.4
+ Write traj.            1        101        0.040        0.0    64.0
+ Update                 1       1001        0.000        0.0     0.7
+ Rest                   1                   0.006        0.0     9.7
 -----------------------------------------------------------------------
- Total                  1                 608.076      184.7   100.0
------------------------------------------------------------------------
------------------------------------------------------------------------
- PME spread/gather      1      10002      168.349       51.1    27.7
- PME 3D-FFT             1      10002      171.096       52.0    28.1
- PME solve              1       5001      268.221       81.5    44.1
+ Total                  1                   0.063        0.0   100.0
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:    184.670    184.682    100.0
-                       3:04
-               (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:      0.000      9.520      4.680      5.129
-Finished mdrun on node 0 Tue May 23 13:27:06 2017
+       Time:      0.010      0.023     41.3
+               (Mnbf/s)   (MFlops)   (ns/day)  (hour/ns)
+Performance:      0.000     99.993  18031.149      0.001
+Finished mdrun on node 0 Tue May 23 15:12:35 2017

@@ -1,10 +1,10 @@
-# This file was created Tue May 23 12:04:18 2017
+# This file was created Tue May 23 15:56:37 2017
 # by the following command:
 # g_energy -f pme.edr -o pme_energy.xvg 
 #
 # g_energy is part of G R O M A C S:
 #
-# Green Red Orange Magenta Azure Cyan Skyblue
+# GROningen Mixture of Alchemy and Childrens' Stories
 #
 @    title "Gromacs Energies"
 @    xaxis  label "Time (ps)"
