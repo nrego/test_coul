@@ -7,8 +7,8 @@ tau_t           = 0.1
 ref_t           = 300
 tc_grps         = System
 
-comm_mode       = Linear
-nstcomm         = 10
+comm_mode       = Angular
+nstcomm         = 1
 
 ; OUTPUT CONTROL OPTIONS
 ; Output frequency for coords (x), velocities (v) and forces (f)
