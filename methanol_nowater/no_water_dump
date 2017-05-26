@@ -1,0 +1,407 @@
+                         :-)  G  R  O  M  A  C  S  (-:
+
+                   Good gRace! Old Maple Actually Chews Slate
+
+                            :-)  VERSION 4.5.3  (-:
+
+        Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
+      Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
+        Gerrit Groenhof, Peter Kasson, Per Larsson, Pieter Meulenhoff, 
+           Teemu Murtola, Szilard Pall, Sander Pronk, Roland Schulz, 
+                Michael Shirts, Alfons Sijbers, Peter Tieleman,
+
+               Berk Hess, David van der Spoel, and Erik Lindahl.
+
+       Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+            Copyright (c) 2001-2010, The GROMACS development team at
+        Uppsala University & The Royal Institute of Technology, Sweden.
+            check out http://www.gromacs.org for more information.
+
+         This program is free software; you can redistribute it and/or
+          modify it under the terms of the GNU General Public License
+         as published by the Free Software Foundation; either version 2
+             of the License, or (at your option) any later version.
+
+                               :-)  gmxdump  (-:
+
+Option     Filename  Type         Description
+------------------------------------------------------------
+  -s   no_water.tpr  Input, Opt!  Run input file: tpr tpb tpa
+  -f       traj.trr  Input, Opt.  Trajectory: xtc trr trj gro g96 pdb cpt
+  -e       ener.edr  Input, Opt.  Energy file
+ -cp      state.cpt  Input, Opt.  Checkpoint file
+  -p      topol.top  Input, Opt.  Topology file
+-mtx    hessian.mtx  Input, Opt.  Hessian matrix
+ -om     grompp.mdp  Output, Opt. grompp input file with MD parameters
+
+Option       Type   Value   Description
+------------------------------------------------------
+-[no]h       bool   no      Print help info and quit
+-[no]version bool   no      Print version info and quit
+-nice        int    0       Set the nicelevel
+-[no]nr      bool   yes     Show index numbers in output (leaving them out
+                            makes comparison easier, but creates a useless
+                            topology)
+-[no]sys     bool   no      List the atoms and bonded interactions for the
+                            whole system instead of for each molecule type
+
+Reading file no_water.tpr, VERSION 4.5.3 (single precision)
+Reading file no_water.tpr, VERSION 4.5.3 (single precision)
+no_water.tpr:
+inputrec:
+   integrator           = sd
+   nsteps               = 5000
+   init_step            = 0
+   ns_type              = Grid
+   nstlist              = 10
+   ndelta               = 2
+   nstcomm              = 10
+   comm_mode            = Linear
+   nstlog               = 100
+   nstxout              = 100
+   nstvout              = 100
+   nstfout              = 0
+   nstcalcenergy        = 10
+   nstenergy            = 100
+   nstxtcout            = 0
+   init_t               = 0
+   delta_t              = 0.002
+   xtcprec              = 1000
+   nkx                  = 28
+   nky                  = 28
+   nkz                  = 28
+   pme_order            = 6
+   ewald_rtol           = 1e-06
+   ewald_geometry       = 0
+   epsilon_surface      = 0
+   optimize_fft         = FALSE
+   ePBC                 = xyz
+   bPeriodicMols        = FALSE
+   bContinuation        = TRUE
+   bShakeSOR            = FALSE
+   etc                  = No
+   nsttcouple           = -1
+   epc                  = No
+   epctype              = Isotropic
+   nstpcouple           = -1
+   tau_p                = 1
+   ref_p (3x3):
+      ref_p[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref_p[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref_p[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   compress (3x3):
+      compress[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compress[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compress[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   refcoord_scaling     = No
+   posres_com (3):
+      posres_com[0]= 0.00000e+00
+      posres_com[1]= 0.00000e+00
+      posres_com[2]= 0.00000e+00
+   posres_comB (3):
+      posres_comB[0]= 0.00000e+00
+      posres_comB[1]= 0.00000e+00
+      posres_comB[2]= 0.00000e+00
+   andersen_seed        = 815131
+   rlist                = 1
+   rlistlong            = 1
+   rtpi                 = 0.05
+   coulombtype          = Ewald
+   rcoulomb_switch      = 0
+   rcoulomb             = 1
+   vdwtype              = Switch
+   rvdw_switch          = 0.8
+   rvdw                 = 0.9
+   epsilon_r            = 1
+   epsilon_rf           = 1
+   tabext               = 1
+   implicit_solvent     = No
+   gb_algorithm         = Still
+   gb_epsilon_solvent   = 80
+   nstgbradii           = 1
+   rgbradii             = 1
+   gb_saltconc          = 0
+   gb_obc_alpha         = 1
+   gb_obc_beta          = 0.8
+   gb_obc_gamma         = 4.85
+   gb_dielectric_offset = 0.009
+   sa_algorithm         = Ace-approximation
+   sa_surface_tension   = 2.05016
+   DispCorr             = No
+   free_energy          = no
+   init_lambda          = 0
+   delta_lambda         = 0
+   n_foreign_lambda     = 0
+   sc_alpha             = 0
+   sc_power             = 0
+   sc_sigma             = 0.3
+   sc_sigma_min         = 0.3
+   nstdhdl              = 10
+   separate_dhdl_file   = yes
+   dhdl_derivatives     = yes
+   dh_hist_size         = 0
+   dh_hist_spacing      = 0.1
+   nwall                = 0
+   wall_type            = 9-3
+   wall_atomtype[0]     = -1
+   wall_atomtype[1]     = -1
+   wall_density[0]      = 0
+   wall_density[1]      = 0
+   wall_ewald_zfac      = 3
+   pull                 = no
+   disre                = No
+   disre_weighting      = Conservative
+   disre_mixed          = FALSE
+   dr_fc                = 1000
+   dr_tau               = 0
+   nstdisreout          = 100
+   orires_fc            = 0
+   orires_tau           = 0
+   nstorireout          = 100
+   dihre-fc             = 1000
+   em_stepsize          = 0.01
+   em_tol               = 10
+   niter                = 20
+   fc_stepsize          = 0
+   nstcgsteep           = 1000
+   nbfgscorr            = 10
+   ConstAlg             = Lincs
+   shake_tol            = 0.0001
+   lincs_order          = 12
+   lincs_warnangle      = 30
+   lincs_iter           = 1
+   bd_fric              = 0
+   ld_seed              = 16934
+   cos_accel            = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   userint1             = 0
+   userint2             = 0
+   userint3             = 0
+   userint4             = 0
+   userreal1            = 0
+   userreal2            = 0
+   userreal3            = 0
+   userreal4            = 0
+grpopts:
+   nrdf:          11
+   ref_t:         300
+   tau_t:         0.1
+anneal:          No
+ann_npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp_flags[  0]: 0
+   efield-x:
+      n = 0
+   efield-xt:
+      n = 0
+   efield-y:
+      n = 0
+   efield-yt:
+      n = 0
+   efield-z:
+      n = 0
+   efield-zt:
+      n = 0
+   bQMMM                = FALSE
+   QMconstraints        = 0
+   QMMMscheme           = 0
+   scalefactor          = 1
+qm_opts:
+   ngQM                 = 0
+header:
+   bIr    = present
+   bBox   = present
+   bTop   = present
+   bX     = present
+   bV     = present
+   bF     = not present
+   natoms = 6
+   lambda = 0.000000e+00
+topology:
+   name="Methanol in water"
+   #atoms               = 6
+   molblock (0):
+      moltype              = 0 "methanol"
+      #molecules           = 1
+      #atoms_mol           = 6
+      #posres_xA           = 0
+      #posres_xB           = 0
+   ffparams:
+      atnr=4
+      ntypes=23
+         functype[0]=LJ_SR, c6= 2.82676169e-03, c12= 4.36424807e-06
+         functype[1]=LJ_SR, c6= 2.89984699e-03, c12= 3.31182196e-06
+         functype[2]=LJ_SR, c6= 4.43826080e-04, c12= 2.83998162e-07
+         functype[3]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[4]=LJ_SR, c6= 2.89984699e-03, c12= 3.31182196e-06
+         functype[5]=LJ_SR, c6= 2.92774010e-03, c12= 2.43426393e-06
+         functype[6]=LJ_SR, c6= 4.33491339e-04, c12= 1.95360371e-07
+         functype[7]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[8]=LJ_SR, c6= 4.43826080e-04, c12= 2.83998162e-07
+         functype[9]=LJ_SR, c6= 4.33491339e-04, c12= 1.95360371e-07
+         functype[10]=LJ_SR, c6= 5.98632250e-05, c12= 1.36385729e-08
+         functype[11]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[12]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[13]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[14]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[15]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[16]=BONDS, b0A= 1.42600e-01, cbA= 2.62839e+05, b0B= 1.42600e-01, cbB= 2.62839e+05
+         functype[17]=ANGLES, thA= 1.08160e+02, ctA= 3.94133e+02, thB= 1.08160e+02, ctB= 3.94133e+02
+         functype[18]=ANGLES, thA= 1.09880e+02, ctA= 4.26768e+02, thB= 1.09880e+02, ctB= 4.26768e+02
+         functype[19]=ANGLES, thA= 1.09550e+02, ctA= 3.28026e+02, thB= 1.09550e+02, ctB= 3.28026e+02
+         functype[20]=PDIHS, phiA= 0.00000000e+00, cpA= 6.97333336e-01, phiB= 0.00000000e+00, cpB= 6.97333336e-01, mult=3
+         functype[21]=CONSTR, dA= 1.09300002e-01, dB= 1.09300002e-01
+         functype[22]=CONSTR, dA= 9.74000022e-02, dB= 9.74000022e-02
+      reppow               = 12
+      fudgeQQ              = 0.833333
+cmap
+   atomtypes:
+      atomtype[  0]={radius=-1.00000e+00, volume=-1.00000e+00, gb_radius=-1.00000e+00, surftens=-1.00000e+00, atomnumber=   6, S_hct=-1.00000e+00)}
+      atomtype[  1]={radius=-1.00000e+00, volume=-1.00000e+00, gb_radius=-1.00000e+00, surftens=-1.00000e+00, atomnumber=   8, S_hct=-1.00000e+00)}
+      atomtype[  2]={radius=-1.00000e+00, volume=-1.00000e+00, gb_radius=-1.00000e+00, surftens=-1.00000e+00, atomnumber=   1, S_hct=-1.00000e+00)}
+      atomtype[  3]={radius=-1.00000e+00, volume=-1.00000e+00, gb_radius=-1.00000e+00, surftens=-1.00000e+00, atomnumber=   1, S_hct=-1.00000e+00)}
+   moltype (0):
+      name="methanol"
+      atoms:
+         atom (6):
+            atom[     0]={type=  0, typeB=  0, ptype=    Atom, m= 1.20100e+01, q= 1.20100e-01, mB= 1.20100e+01, qB= 0.00000e+00, resind=    0, atomnumber=  6}
+            atom[     1]={type=  1, typeB=  1, ptype=    Atom, m= 1.60000e+01, q=-6.00300e-01, mB= 1.60000e+01, qB= 0.00000e+00, resind=    0, atomnumber=  8}
+            atom[     2]={type=  2, typeB=  2, ptype=    Atom, m= 1.00800e+00, q= 2.77000e-02, mB= 1.00800e+00, qB= 0.00000e+00, resind=    0, atomnumber=  1}
+            atom[     3]={type=  2, typeB=  2, ptype=    Atom, m= 1.00800e+00, q= 2.77000e-02, mB= 1.00800e+00, qB= 0.00000e+00, resind=    0, atomnumber=  1}
+            atom[     4]={type=  2, typeB=  2, ptype=    Atom, m= 1.00800e+00, q= 2.77000e-02, mB= 1.00800e+00, qB= 0.00000e+00, resind=    0, atomnumber=  1}
+            atom[     5]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 3.97100e-01, mB= 1.00800e+00, qB= 0.00000e+00, resind=    0, atomnumber=  1}
+         atom (6):
+            atom[0]={name="C1"}
+            atom[1]={name="O1"}
+            atom[2]={name="H1"}
+            atom[3]={name="H2"}
+            atom[4]={name="H3"}
+            atom[5]={name="H4"}
+         type (6):
+            type[0]={name="C3",nameB="C3"}
+            type[1]={name="OH",nameB="OH"}
+            type[2]={name="H1",nameB="H1"}
+            type[3]={name="H1",nameB="H1"}
+            type[4]={name="H1",nameB="H1"}
+            type[5]={name="HO",nameB="HO"}
+         residue (1):
+            residue[0]={name="MOL", nr=1, ic=' '}
+      cgs:
+         nr=6
+         cgs[0]={0..0}
+         cgs[1]={1..1}
+         cgs[2]={2..2}
+         cgs[3]={3..3}
+         cgs[4]={4..4}
+         cgs[5]={5..5}
+      excls:
+         nr=6
+         nra=36
+         excls[0][0..5]={0, 1, 2, 3, 4, 5}
+         excls[1][6..11]={0, 1, 2, 3, 4, 5}
+         excls[2][12..17]={0, 1, 2, 3, 4, 5}
+         excls[3][18..23]={0, 1, 2, 3, 4, 5}
+         excls[4][24..29]={0, 1, 2, 3, 4, 5}
+         excls[5][30..35]={0, 1, 2, 3, 4, 5}
+      Bond:
+         nr: 3
+         iatoms:
+            0 type=16 (BONDS) 0 1
+      Angle:
+         nr: 28
+         iatoms:
+            0 type=17 (ANGLES) 0 1 5
+            1 type=18 (ANGLES) 1 0 2
+            2 type=18 (ANGLES) 1 0 3
+            3 type=18 (ANGLES) 1 0 4
+            4 type=19 (ANGLES) 2 0 3
+            5 type=19 (ANGLES) 2 0 4
+            6 type=19 (ANGLES) 3 0 4
+      Proper Dih.:
+         nr: 15
+         iatoms:
+            0 type=20 (PDIHS) 2 0 1 5
+            1 type=20 (PDIHS) 3 0 1 5
+            2 type=20 (PDIHS) 4 0 1 5
+      Constraint:
+         nr: 12
+         iatoms:
+            0 type=21 (CONSTR) 0 2
+            1 type=22 (CONSTR) 1 5
+            2 type=21 (CONSTR) 0 4
+            3 type=21 (CONSTR) 0 3
+grp[T-Coupling  ] nr=1, name=[ System]
+grp[Energy Mon. ] nr=1, name=[ rest]
+grp[Acceleration] nr=1, name=[ rest]
+grp[Freeze      ] nr=1, name=[ rest]
+grp[User1       ] nr=1, name=[ rest]
+grp[User2       ] nr=1, name=[ rest]
+grp[VCM         ] nr=1, name=[ rest]
+grp[XTC         ] nr=1, name=[ rest]
+grp[Or. Res. Fit] nr=1, name=[ rest]
+grp[QMMM        ] nr=1, name=[ rest]
+   grpname (4):
+      grpname[0]={name="System"}
+      grpname[1]={name="Other"}
+      grpname[2]={name="MOL"}
+      grpname[3]={name="rest"}
+   groups           T-Cou Energ Accel Freez User1 User2   VCM   XTC Or. R  QMMM
+   allocated            0     0     0     0     0     0     0     0     0     0
+   groupnr[    *] =    0     0     0     0     0     0     0     0     0     0 
+box (3x3):
+   box[    0]={ 2.68440e+00,  0.00000e+00,  0.00000e+00}
+   box[    1]={ 0.00000e+00,  2.68440e+00,  0.00000e+00}
+   box[    2]={ 0.00000e+00,  0.00000e+00,  2.68440e+00}
+box_rel (3x3):
+   box_rel[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+boxv (3x3):
+   boxv[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+pres_prev (3x3):
+   pres_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+svir_prev (3x3):
+   svir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+fvir_prev (3x3):
+   fvir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+nosehoover_xi: not available
+x (6x3):
+   x[    0]={ 1.34900e+00,  1.31300e+00,  1.36400e+00}
+   x[    1]={ 1.29000e+00,  1.43600e+00,  1.32800e+00}
+   x[    2]={ 1.45800e+00,  1.32400e+00,  1.36700e+00}
+   x[    3]={ 1.32100e+00,  1.23600e+00,  1.2920
+gcq#4: "Hmm, It *Does* Go Well With the Chicken" (Beastie Boys)
+
+0e+00}
+   x[    4]={ 1.31400e+00,  1.28400e+00,  1.46400e+00}
+   x[    5]={ 1.32300e+00,  1.45900e+00,  1.24000e+00}
+v (6x3):
+   v[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    3]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    4]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    5]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+Group statistics
+T-Coupling  :       6  (total 6 atoms)
+Energy Mon. :       6  (total 6 atoms)
+Acceleration:       6  (total 6 atoms)
+Freeze      :       6  (total 6 atoms)
+User1       :       6  (total 6 atoms)
+User2       :       6  (total 6 atoms)
+VCM         :       6  (total 6 atoms)
+XTC         :       6  (total 6 atoms)
+Or. Res. Fit:       6  (total 6 atoms)
+QMMM        :       6  (total 6 atoms)
