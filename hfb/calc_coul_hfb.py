@@ -20,8 +20,9 @@ for_lmbdas = [1.0]
 n_for_lmbdas = len(for_lmbdas)
 this_lmbda = 0.0
 
-atm_indices = np.arange(univ.n_atoms)
+atm_indices = np.arange(univ.atoms.n_atoms)
 alc_indices = np.arange(872, 888)
+#alc_indices = [877]
 
 excls = {i: None for i in alc_indices}
 
@@ -54,6 +55,23 @@ excls[886]=[874, 878, 879, 880, 884, 885, 886, 887]
 excls[887]=[874, 878, 879, 880, 884, 885, 886, 887]
 
 pairs = {i: None for i in alc_indices}
+pairs[872] = [853, 869, 879, 880, 884, 891, 892]                # CA
+pairs[873] = [868, 871, 875, 876, 877, 878, 889, 890]           # HA
+pairs[874] = [868, 871, 881, 882, 883, 885, 886, 887, 889, 890] # CB
+pairs[875] = [870, 879, 880, 884, 888]                          # HB1
+pairs[876] = [870, 879, 880, 884, 888]                          # HB2
+pairs[877] = [870, 888]                                         # HB3
+pairs[878] = [870, 888]                                         # CG
+pairs[879] = [881, 882, 883, 885, 886, 887]                     # HG
+pairs[880] = [885, 886, 887]                                    # CD1
+pairs[881] = [884]                                              # HD11
+pairs[882] = [884]                                              # HD12
+pairs[883] = [884]                                              # HD13
+pairs[884] = []                                                 # CD2
+pairs[885] = []                                                 # HD21
+pairs[886] = []                                                 # HD22
+pairs[887] = []                                                 # HD23
+
 
 alc_info = {i: None for i in alc_indices}
 
@@ -74,6 +92,18 @@ alc_info[885]={'typeA':  4, 'typeB':  4,  'mA': 1.00800e+00, 'qA': 1.00000e-01, 
 alc_info[886]={'typeA':  4, 'typeB':  4,  'mA': 1.00800e+00, 'qA': 1.00000e-01, 'mB': 1.00800e+00, 'qB': 0.00000e+00, 'resind':   62, 'atomnumber':  1}
 alc_info[887]={'typeA':  4, 'typeB':  4,  'mA': 1.00800e+00, 'qA': 1.00000e-01, 'mB': 1.00800e+00, 'qB': 0.00000e+00, 'resind':   62, 'atomnumber':  1}
 
+other_charges = {
+    853: -0.0518,  # CA(-)
+    868:  0.5973,  # C(-)
+    869: -0.5679,  # O(-)
+    870: -0.4157,  # N
+    871:  0.2719,  # H
+    888:  0.5973,  # C
+    889: -0.5679,  # O
+    890: -0.4157,  # N(+),
+    891:  0.2719,  # H(+)
+    892:  0.0213   # CA(+)
+}
 rtol = 1e-6
 rc = 1.0
 
@@ -118,13 +148,19 @@ for i_frame in range(n_frames):
     if i_frame % 100 == 0:
         print("frame {} of {}".format(i_frame, n_frames))
     #univ.trajectory[i_frame]
-    univ.trajectory[0]
+    univ.trajectory[-1]
     # Get positions in nm
     univ.atoms.positions = univ.atoms.positions / 10.0
+    ## Regular 1/r coul interactions with cut-off
     coul_this = 0.0
     coul_for = [0.0 for for_lmbda in for_lmbdas]
+    ## 1-4 pair interactions (treated as regular 1/r coul interactions)
+    coul_14_this = 0.0
+    coul_14_for = [0.0 for for_lmbda in for_lmbdas]
+    ## Short-ranged part of ewald sum (depends on rc, the cutoff, and rtol)
     ewald_sr_this = 0.0
     ewald_sr_for = [0.0 for for_lmbda in for_lmbdas]
+    ## Long-ranged (fourier) part of ewald sum (also depends on rc and rtol, which together determine beta_smooth)
     ewald_lr_this = 0.0
     ewald_lr_for = [0.0 for for_lmbda in for_lmbdas]
 
@@ -135,18 +171,23 @@ for i_frame in range(n_frames):
         pair_indices = pairs[i]
         atm_i = univ.atoms[i]
         pos_i = atm_i.position
+        atm_i_info = alc_info[i]
 
-        charge_i_a, charge_i_b = charges[i]
+        charge_i_a, charge_i_b = atm_i_info['qA'], atm_i_info['qB']
 
         for j in incl_indices:
+            continue
+            assert j not in pair_indices, "double-counting a pair!"
             atm_j = univ.atoms[j]
             if j in alc_indices:
                 if j <= i:
                     continue
-                charge_j_a, charge_j_b = charges[j]
+                atm_j_info = alc_info[j]
+                charge_j_a, charge_j_b = atm_j_info['qA'], atm_j_info['qB']
             else:
+                #charge_j_a = charge_j_b = np.round(atm_j.charge, decimals=4)
                 charge_j_a = charge_j_b = atm_j.charge
-                
+
             pos_j = atm_j.position
 
             r = np.linalg.norm(pos_i - pos_j)
@@ -185,20 +226,32 @@ for i_frame in range(n_frames):
                     ewald_lr_for[i_for] += (2*np.pi*ke / box.prod()) * (1/k_sq) * exp2 * ((1-for_lmbda)*np.abs(s_k_for_a)**2 + (for_lmbda)*np.abs(s_k_for_b)**2)
 
         # 1-4 pairs; regular coulomb only
+        this_contrib = 0.0
+        for_contrib = 0.0
         for j in pair_indices:
             atm_j = univ.atoms[j]
             if j in alc_indices:
                 if j <= i:
                     continue
-                charge_j_a, charge_j_b = charges[j]
+                atm_j_info = alc_info[j]
+                charge_j_a, charge_j_b = atm_j_info['qA'], atm_j_info['qB'] 
             else:
+                #charge_j_a = charge_j_b = np.round(atm_j.charge, decimals=4)
+                #charge_j_a = charge_j_b = other_charges[j]
                 charge_j_a = charge_j_b = atm_j.charge
-                
             pos_j = atm_j.position
 
             r = np.linalg.norm(pos_i - pos_j)
 
-            coul_this += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-this_lmbda) + charge_i_b*charge_j_b*(this_lmbda) )
+            coul_14_this += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-this_lmbda) + charge_i_b*charge_j_b*(this_lmbda) )
+            this_contrib += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-this_lmbda) + charge_i_b*charge_j_b*(this_lmbda) )
+            for i_for, for_lmbda in enumerate(for_lmbdas):
+                coul_14_for[i_for] += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-for_lmbda) + charge_i_b*charge_j_b*(for_lmbda) )
+                for_contrib += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-for_lmbda) + charge_i_b*charge_j_b*(for_lmbda) )
+
+        print("14 interactions for atm {}".format(atm_i.name))
+        print("  lambda=0:  {}".format(this_contrib))
+        print("  lambda=1:  {}".format(for_contrib))
 
     my_diffs[i_frame, :, 1] = r
     for i_for in range(n_for_lmbdas):

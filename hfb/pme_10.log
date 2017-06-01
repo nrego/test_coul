@@ -1,12 +1,12 @@
-Log file opened on Wed May 31 20:27:55 2017
-Host: nick-ThinkPad-T440p  pid: 2557  nodeid: 0  nnodes:  1
-The Gromacs distribution was built @TMP_TIME@ by
-nick@nick-ThinkPad-T440p [CMAKE] (@TMP_MACHINE@)
+Log file opened on Thu Jun  1 18:20:45 2017
+Host: huntsman-ve565-2428.apn.wlan.upenn.edu  pid: 13848  nodeid: 0  nnodes:  1
+The Gromacs distribution was built Tue Mar 14 13:14:50 EDT 2017 by
+nick@huntsman-ve565-0253.apn.wlan.upenn.edu (Darwin 14.5.0 x86_64)
 
 
                          :-)  G  R  O  M  A  C  S  (-:
 
-               Giving Russians Opium May Alter Current Situation
+        Getting the Right Output Means no Artefacts in Calculating Stuff
 
                             :-)  VERSION 4.5.3  (-:
 
@@ -352,9 +352,9 @@ Total number of connections is 82258
 Max number of graph edges per atom is 5
 Total number of graph edges is 48348
 RMS relative constraint deviation after constraining: 0.00e+00
-Initial temperature: 446.985 K
+Initial temperature: 446.979 K
 
-Started mdrun on node 0 Wed May 31 20:27:55 2017
+Started mdrun on node 0 Thu Jun  1 18:20:46 2017
 
            Step           Time         Lambda
               0        0.00000        1.00000
@@ -368,7 +368,7 @@ Grid: 8 x 8 x 21 cells
       Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
    -5.38904e+05    9.18613e+04   -4.47042e+05   -4.47042e+05    3.06923e+02
  Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    6.20706e+01    1.09800e+02    0.00000e+00    0.00000e+00    4.46990e-06
+    6.20760e+01    1.09800e+02    0.00000e+00    0.00000e+00    4.46990e-06
 
            Step           Time         Lambda
             500        1.00000        1.00000
@@ -381,7 +381,7 @@ Grid: 8 x 8 x 21 cells
       Potential    Kinetic En.   Total Energy  Conserved En.    Temperature
    -5.37542e+05    9.07356e+04   -4.46807e+05   -4.46807e+05    3.03162e+02
  Pressure (bar)  dVpot/dlambda  dEkin/dlambda  dH/dl constr.   Constr. rmsd
-    2.52234e+00    1.13956e+02    0.00000e+00    0.00000e+00    3.96024e-06
+    2.61599e+00    1.13956e+02    0.00000e+00    0.00000e+00    3.95514e-06
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -428,24 +428,24 @@ Grid: 8 x 8 x 21 cells
 
  Computing:         Nodes     Number     G-Cycles    Seconds     %
 -----------------------------------------------------------------------
- Neighbor search        1          2        0.268        0.1    32.1
- Force                  1          2        0.224        0.1    26.8
- PME mesh               1          2        0.279        0.1    33.4
- Write traj.            1          2        0.022        0.0     2.7
- Update                 1          2        0.004        0.0     0.5
- Constraints            1          2        0.009        0.0     1.1
- Rest                   1                   0.027        0.0     3.3
+ Neighbor search        1          2        0.740        0.2    29.1
+ Force                  1          2        0.335        0.1    13.2
+ PME mesh               1          2        1.180        0.4    46.5
+ Write traj.            1          2        0.109        0.0     4.3
+ Update                 1          2        0.011        0.0     0.4
+ Constraints            1          2        0.022        0.0     0.9
+ Rest                   1                   0.142        0.0     5.6
 -----------------------------------------------------------------------
- Total                  1                   0.834        0.3   100.0
+ Total                  1                   2.538        0.8   100.0
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
- PME spread/gather      1          8        0.173        0.1    20.7
- PME 3D-FFT             1          8        0.050        0.0     6.0
- PME solve              1          4        0.056        0.0     6.7
+ PME spread/gather      1          8        0.883        0.3    34.8
+ PME 3D-FFT             1          8        0.083        0.0     3.3
+ PME solve              1          4        0.213        0.1     8.4
 -----------------------------------------------------------------------
 
                NODE (s)   Real (s)      (%)
-       Time:      0.309      0.310    100.0
+       Time:      0.767      0.771     99.6
                (Mnbf/s)   (GFlops)   (ns/day)  (hour/ns)
-Performance:     46.110      5.844    279.729      0.086
-Finished mdrun on node 0 Wed May 31 20:27:55 2017
+Performance:     18.603      2.358    112.855      0.213
+Finished mdrun on node 0 Thu Jun  1 18:20:46 2017

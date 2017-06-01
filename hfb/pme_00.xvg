@@ -1,10 +1,10 @@
-# This file was created Wed May 31 20:27:48 2017
+# This file was created Thu Jun  1 18:20:31 2017
 # by the following command:
-# mdrun -deffnm pme_00 -rerun traj.trr -reprod -nt 1 -v 
+# mdrun -deffnm pme_00 -rerun traj.trr -v -reprod -nt 1 
 #
 # mdrun is part of G R O M A C S:
 #
-# Giant Rising Ordinary Mutants for A Clerical Setup
+# Gromacs Runs On Most of All Computer Systems
 #
 @    title "dH/d\xl\f{}, \xD\f{}H"
 @    xaxis  label "Time (ps)"

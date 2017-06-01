@@ -1,10 +1,10 @@
-# This file was created Wed May 31 20:27:55 2017
+# This file was created Thu Jun  1 18:20:46 2017
 # by the following command:
-# mdrun -deffnm pme_10 -rerun traj.trr -reprod -nt 1 -v 
+# mdrun -deffnm pme_10 -rerun traj.trr -v -reprod -nt 1 
 #
 # mdrun is part of G R O M A C S:
 #
-# Giving Russians Opium May Alter Current Situation
+# GROtesk MACabre and Sinister
 #
 @    title "dH/d\xl\f{}, \xD\f{}H"
 @    xaxis  label "Time (ps)"
