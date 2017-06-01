@@ -1,0 +1,332 @@
+                         :-)  G  R  O  M  A  C  S  (-:
+
+                       Great Red Owns Many ACres of Sand 
+
+                            :-)  VERSION 4.5.3  (-:
+
+        Written by Emile Apol, Rossen Apostolov, Herman J.C. Berendsen,
+      Aldert van Buuren, Pär Bjelkmar, Rudi van Drunen, Anton Feenstra, 
+        Gerrit Groenhof, Peter Kasson, Per Larsson, Pieter Meulenhoff, 
+           Teemu Murtola, Szilard Pall, Sander Pronk, Roland Schulz, 
+                Michael Shirts, Alfons Sijbers, Peter Tieleman,
+
+               Berk Hess, David van der Spoel, and Erik Lindahl.
+
+       Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+            Copyright (c) 2001-2010, The GROMACS development team at
+        Uppsala University & The Royal Institute of Technology, Sweden.
+            check out http://www.gromacs.org for more information.
+
+         This program is free software; you can redistribute it and/or
+          modify it under the terms of the GNU General Public License
+         as published by the Free Software Foundation; either version 2
+             of the License, or (at your option) any later version.
+
+                               :-)  gmxdump  (-:
+
+Option     Filename  Type         Description
+------------------------------------------------------------
+  -s       excl.tpr  Input, Opt!  Run input file: tpr tpb tpa
+  -f       traj.trr  Input, Opt.  Trajectory: xtc trr trj gro g96 pdb cpt
+  -e       ener.edr  Input, Opt.  Energy file
+ -cp      state.cpt  Input, Opt.  Checkpoint file
+  -p      topol.top  Input, Opt.  Topology file
+-mtx    hessian.mtx  Input, Opt.  Hessian matrix
+ -om     grompp.mdp  Output, Opt. grompp input file with MD parameters
+
+Option       Type   Value   Description
+------------------------------------------------------
+-[no]h       bool   no      Print help info and quit
+-[no]version bool   no      Print version info and quit
+-nice        int    0       Set the nicelevel
+-[no]nr      bool   yes     Show index numbers in output (leaving them out
+                            makes comparison easier, but creates a useless
+                            topology)
+-[no]sys     bool   no      List the atoms and bonded interactions for the
+                            whole system instead of for each molecule type
+
+Reading file excl.tpr, VERSION 4.5.3 (single precision)
+Reading file excl.tpr, VERSION 4.5.3 (single precision)
+excl.tpr:
+inputrec:
+   integrator           = sd
+   nsteps               = 5000
+   init_step            = 0
+   ns_type              = Grid
+   nstlist              = 10
+   ndelta               = 2
+   nstcomm              = 10
+   comm_mode            = Angular
+   nstlog               = 100
+   nstxout              = 100
+   nstvout              = 100
+   nstfout              = 0
+   nstcalcenergy        = 10
+   nstenergy            = 100
+   nstxtcout            = 0
+   init_t               = 0
+   delta_t              = 0.002
+   xtcprec              = 1000
+   nkx                  = 20
+   nky                  = 20
+   nkz                  = 20
+   pme_order            = 6
+   ewald_rtol           = 1e-06
+   ewald_geometry       = 0
+   epsilon_surface      = 0
+   optimize_fft         = FALSE
+   ePBC                 = xyz
+   bPeriodicMols        = FALSE
+   bContinuation        = TRUE
+   bShakeSOR            = FALSE
+   etc                  = No
+   nsttcouple           = -1
+   epc                  = No
+   epctype              = Isotropic
+   nstpcouple           = -1
+   tau_p                = 1
+   ref_p (3x3):
+      ref_p[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref_p[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref_p[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   compress (3x3):
+      compress[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compress[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compress[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   refcoord_scaling     = No
+   posres_com (3):
+      posres_com[0]= 0.00000e+00
+      posres_com[1]= 0.00000e+00
+      posres_com[2]= 0.00000e+00
+   posres_comB (3):
+      posres_comB[0]= 0.00000e+00
+      posres_comB[1]= 0.00000e+00
+      posres_comB[2]= 0.00000e+00
+   andersen_seed        = 815131
+   rlist                = 0.9
+   rlistlong            = 0.9
+   rtpi                 = 0.05
+   coulombtype          = PME
+   rcoulomb_switch      = 0
+   rcoulomb             = 0.9
+   vdwtype              = Cut-off
+   rvdw_switch          = 0
+   rvdw                 = 0.9
+   epsilon_r            = 1
+   epsilon_rf           = 1
+   tabext               = 1
+   implicit_solvent     = No
+   gb_algorithm         = Still
+   gb_epsilon_solvent   = 80
+   nstgbradii           = 1
+   rgbradii             = 1
+   gb_saltconc          = 0
+   gb_obc_alpha         = 1
+   gb_obc_beta          = 0.8
+   gb_obc_gamma         = 4.85
+   gb_dielectric_offset = 0.009
+   sa_algorithm         = Ace-approximation
+   sa_surface_tension   = 2.05016
+   DispCorr             = No
+   free_energy          = no
+   init_lambda          = 0
+   delta_lambda         = 0
+   n_foreign_lambda     = 0
+   sc_alpha             = 0
+   sc_power             = 0
+   sc_sigma             = 0.3
+   sc_sigma_min         = 0.3
+   nstdhdl              = 10
+   separate_dhdl_file   = yes
+   dhdl_derivatives     = yes
+   dh_hist_size         = 0
+   dh_hist_spacing      = 0.1
+   nwall                = 0
+   wall_type            = 9-3
+   wall_atomtype[0]     = -1
+   wall_atomtype[1]     = -1
+   wall_density[0]      = 0
+   wall_density[1]      = 0
+   wall_ewald_zfac      = 3
+   pull                 = no
+   disre                = No
+   disre_weighting      = Conservative
+   disre_mixed          = FALSE
+   dr_fc                = 1000
+   dr_tau               = 0
+   nstdisreout          = 100
+   orires_fc            = 0
+   orires_tau           = 0
+   nstorireout          = 100
+   dihre-fc             = 1000
+   em_stepsize          = 0.01
+   em_tol               = 10
+   niter                = 20
+   fc_stepsize          = 0
+   nstcgsteep           = 1000
+   nbfgscorr            = 10
+   ConstAlg             = Lincs
+   shake_tol            = 0.0001
+   lincs_order          = 12
+   lincs_warnangle      = 30
+   lincs_iter           = 1
+   bd_fric              = 0
+   ld_seed              = 12464
+   cos_accel            = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   userint1             = 0
+   userint2             = 0
+   userint3             = 0
+   userint4             = 0
+   userreal1            = 0
+   userreal2            = 0
+   userreal3            = 0
+   userreal4            = 0
+grpopts:
+   nrdf:           0
+   ref_t:         300
+   tau_t:         0.1
+anneal:          No
+ann_npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp_flags[  0]: 0
+   efield-x:
+      n = 0
+   efield-xt:
+      n = 0
+   efield-y:
+      n = 0
+   efield-yt:
+      n = 0
+   efield-z:
+      n = 0
+   efield-zt:
+      n = 0
+   bQMMM                = FALSE
+   QMconstraints        = 0
+   QMMMscheme           = 0
+   scalefactor          = 1
+qm_opts:
+   ngQM                 = 0
+header:
+   bIr    = present
+   bBox   = present
+   bTop   = present
+   bX     = present
+   bV     = present
+   bF     = not present
+   natoms = 2
+   lambda = 0.000000e+00
+topology:
+   name="Diatomic test ewald"
+   #atoms               = 2
+   molblock (0):
+      moltype              = 0 "molecule"
+      #molecules           = 1
+      #atoms_mol           = 2
+      #posres_xA           = 0
+      #posres_xB           = 0
+   ffparams:
+      atnr=1
+      ntypes=2
+         functype[0]=LJ_SR, c6= 0.00000000e+00, c12= 0.00000000e+00
+         functype[1]=BONDS, b0A= 1.42600e-01, cbA= 2.62839e+05, b0B= 1.42600e-01, cbB= 2.62839e+05
+      reppow               = 12
+      fudgeQQ              = 0.833333
+cmap
+   atomtypes:
+      atomtype[  0]={radius=-1.00000e+00, volume=-1.00000e+00, gb_radius=-1.00000e+00, surftens=-1.00000e+00, atomnumber=   0, S_hct=-1.00000e+00)}
+   moltype (0):
+      name="molecule"
+      atoms:
+         atom (2):
+            atom[     0]={type=  0, typeB=  0, ptype=    Atom, m= 1.20100e+01, q= 5.00000e-01, mB= 1.20100e+01, qB= 0.00000e+00, resind=    0, atomnumber=  0}
+            atom[     1]={type=  0, typeB=  0, ptype=    Atom, m= 1.60000e+01, q=-5.00000e-01, mB= 1.60000e+01, qB= 0.00000e+00, resind=    0, atomnumber=  0}
+         atom (2):
+            atom[0]={name="C1"}
+            atom[1]={name="O1"}
+         type (2):
+            type[0]={name="DUM_C3",nameB="DUM_C3"}
+            type[1]={name="DUM_OH",nameB="DUM_OH"}
+         residue (1):
+            residue[0]={name="MOL", nr=1, ic=' '}
+      cgs:
+         nr=2
+         cgs[0]={0..0}
+         cgs[1]={1..1}
+      excls:
+         nr=2
+         nra=4
+         excls[0][0..1]={0, 1}
+         excls[1][2..3]={0, 1}
+      Bond:
+         nr: 3
+         iatoms:
+            0 type=1 (BONDS) 0 1
+grp[T-Coupling  ] nr=1, name=[ System]
+grp[Energy Mon. ] nr=1, name=[ rest]
+grp[Acceleration] nr=1, name=[ rest]
+grp[Freeze      ] nr=1, name=[ rest]
+grp[User1       ] nr=1, name=[ rest]
+grp[User2       ] nr=1, name=[ rest]
+grp[VCM         ] nr=1, name=[ rest]
+grp[XTC         ] nr=1, name=[ rest]
+grp[Or. Res. Fit] nr=1, name=[ rest]
+grp[QMMM        ] nr=1, name=[ rest]
+   grpname (4):
+      grpname[0]={name="System"}
+      grpname[1]={name="Other"}
+      grpname[2]={name="MOL"}
+      grpname[3]={name="rest"}
+   groups           T-Cou Energ Accel Freez User1 User2   VCM   XTC Or. R  QMMM
+   allocated            0     0     0     0     0     0     0     0     0     0
+   groupnr[    *] =    0     0     0     0     0     0     0     0     0     0 
+box (3x3):
+   box[    0]={ 2.00000e+00,  0.00000e+00,  0.00000e+00}
+   box[    1]={ 0.00000e+00,  2.00000e+00,  0.00000e+00}
+   box[    2]={ 0.00000e+00,  0.00000e+00,  2.00000e+00}
+box_rel (3x3):
+   box_rel[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+boxv (3x3):
+   boxv[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+pres_prev (3x3):
+   pres_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+svir_prev (3x3):
+   svir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+fvir_prev (3x3):
+   fvir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+nosehoover_xi: not available
+x (2x3):
+   x[    0]={ 1.03000e+00,  9.3
+gcq#57: "Lunatics On Pogo Sticks" (Red Hot Chili Peppers)
+
+8000e-01,  1.01800e+00}
+   x[    1]={ 9.70000e-01,  1.06100e+00,  9.82000e-01}
+v (2x3):
+   v[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   v[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+Group statistics
+T-Coupling  :       2  (total 2 atoms)
+Energy Mon. :       2  (total 2 atoms)
+Acceleration:       2  (total 2 atoms)
+Freeze      :       2  (total 2 atoms)
+User1       :       2  (total 2 atoms)
+User2       :       2  (total 2 atoms)
+VCM         :       2  (total 2 atoms)
+XTC         :       2  (total 2 atoms)
+Or. Res. Fit:       2  (total 2 atoms)
+QMMM        :       2  (total 2 atoms)

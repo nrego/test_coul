@@ -1,0 +1,27 @@
+# This file was created Mon May 29 04:10:41 2017
+# by the following command:
+# g_energy -f fe_run.edr -o ener_fe.xvg 
+#
+# g_energy is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "Gromacs Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coulomb (SR)"
+@ s1 legend "Coul. recip."
+@ s2 legend "Potential"
+    0.000000    0.000000  -24.637909  -24.637909
+    0.200000    0.000000  -24.638157  -24.638157
+    0.400000    0.000000  -24.638142  -24.638142
+    0.600000    0.000000  -24.638332  -24.638332
+    0.800000    0.000000  -24.637913  -24.637913
+    1.000000    0.000000  -24.638054  -24.638054

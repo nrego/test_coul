@@ -1,0 +1,27 @@
+# This file was created Mon May 29 04:10:41 2017
+# by the following command:
+# mdrun -deffnm fe_run -rerun traj.trr -reprod -nt 1 -v 
+#
+# mdrun is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "dH/d\xl\f{}, \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ subtitle "T = 300 (K), \xl\f{} = 0"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "dH/d\xl\f{} \xl\f{} 0"
+@ s1 legend "\xD\f{}H \xl\f{} 1"
+0.0000 24.6379 24.6379
+0.2000 24.6382 24.6382
+0.4000 24.6381 24.6381
+0.6000 24.6383 24.6383
+0.8000 24.6379 24.6379
+1.0000 24.6381 24.6381

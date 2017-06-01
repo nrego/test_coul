@@ -1,0 +1,63 @@
+integrator      = sd
+dt              = 0.002
+nsteps          = 5000
+
+; TEMPERATURE COUPLING
+tau_t           = 0.1
+ref_t           = 300
+tc_grps         = System
+
+comm_mode       = Linear
+nstcomm         = 10
+
+; OUTPUT CONTROL OPTIONS
+; Output frequency for coords (x), velocities (v) and forces (f)
+nstxout                  = 100
+nstvout                  = 100
+nstfout                  = 0
+; Output frequency for energies to log file and energy file
+nstlog                   = 100
+nstcalcenergy            = 10
+nstenergy                = 100
+; Output frequency and precision for xtc file
+nstxtcout                = 0
+xtc-precision            = 1000
+
+; NEIGHBOR SEARCHING
+;  No need without pbc for a single molecule in vacuum
+nstlist   = 10
+ns_type   = grid
+rlist     = 0.9
+pbc       = xyz
+
+
+; NON-BONDED STUFF
+coulombtype     = pme
+rcoulomb        = 0.9
+
+fourierspacing  = 0.1
+pme_order       = 6
+ewald_rtol      = 1e-6
+
+vdwtype         = cut-off
+rvdw            = 0.9
+
+DispCorr        = No   
+
+
+; CONSTRAINTS
+constraints            = h-bonds
+constraint_algorithm   = LINCS
+continuation           = yes
+lincs_order            = 12
+lincs_iter             = 1
+
+gen_vel                = no
+gen_temp               = 300
+gen_seed               = -1
+ld_seed                = -1
+ 
+; FREE ENERGY
+;free_energy   = yes
+;init_lambda  = 0.0
+;foreign_lambda   = 1.0

@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: nick (1000)
 ;	On host: nick-ThinkPad-T440p
-;	At date: Fri May 26 16:12:14 2017
+;	At date: Fri May 26 17:40:38 2017
 ;
 
 ; VARIOUS PREPROCESSING OPTIONS
@@ -23,7 +23,7 @@ init_step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
 simulation_part          = 1
 ; mode for center of mass motion removal
-comm_mode                = Angular
+comm_mode                = Linear
 ; number of steps for center of mass motion removal
 nstcomm                  = 10
 ; group(s) for center of mass motion removal

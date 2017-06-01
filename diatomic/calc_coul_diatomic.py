@@ -10,7 +10,7 @@ try:
     u_for_prev = u_for
 except:
     pass
-univ = MDAnalysis.Universe('run.tpr', 'traj_pbc.trr')
+univ = MDAnalysis.Universe('run.tpr', 'traj.trr')
 from mdtools import dr
 
 from math import erf, erfc
@@ -22,9 +22,11 @@ this_lmbda = 0.0
 atm_indices = range(2)
 alc_indices = range(2)
 
-excls = {0: (0),
-         1: (1)}
+excls = {0: [0],
+         1: [1]}
 
+pairs = {0: [],
+         1: []}
 
 charges = {0:(0.5, 0.0),
            1:(-0.5, 0.0)}
@@ -42,7 +44,7 @@ etol_ind = np.argmax(vals < rtol)
 beta_smooth = xvals[etol_ind] / rc
 print("smoothing width: {}".format(beta_smooth))
 
-ke = 138.9354859 # conv factor to get kJ/mol
+ke = 138.9354859 # coul conv factor to get kJ/mol
 
 fudge = 0.8333333
 
@@ -58,7 +60,7 @@ print("self-self Ewald correction: {} (kJ/mol)".format(ewald_self_this))
 
 box = univ.dimensions[:3] / 10.0
 
-n_waves = 7
+n_waves = 8
 waves = []
 print("generating wave vectors for n_waves: {}!".format(n_waves))
 for n_wave in range(0,n_waves+1):
@@ -69,15 +71,14 @@ wave_vectors = np.array([p for p in itertools.product(waves, repeat=3)])
 print("  ...{} wave vectors generated!".format(wave_vectors.shape[0]))
 
 n_frames = univ.trajectory.n_frames
-#n_frames = 1
+n_frames = 1
 my_diffs = np.zeros((n_frames, len(for_lmbdas), 6))
-
 
 for i_frame in range(n_frames):
     if i_frame % 100 == 0:
         print("frame {} of {}".format(i_frame, n_frames))
-    univ.trajectory[i_frame]
-    #univ.trajectory[250]
+    #univ.trajectory[i_frame]
+    univ.trajectory[0]
     # Get positions in nm
     univ.atoms.positions = univ.atoms.positions / 10.0
     coul_this = 0.0
@@ -91,12 +92,13 @@ for i_frame in range(n_frames):
 
     for i in alc_indices:
         incl_indices = np.setdiff1d(atm_indices, excls[i])
+        pair_indices = pairs[i]
         atm_i = univ.atoms[i]
         pos_i = atm_i.position
 
         charge_i_a, charge_i_b = charges[i]
 
-        for j in atm_indices:
+        for j in incl_indices:
             atm_j = univ.atoms[j]
             if j in alc_indices:
                 if j <= i:
@@ -142,6 +144,21 @@ for i_frame in range(n_frames):
                     s_k_for_b = 0.0+0j
                     ewald_lr_for[i_for] += (2*np.pi*ke / box.prod()) * (1/k_sq) * exp2 * ((1-for_lmbda)*np.abs(s_k_for_a)**2 + (for_lmbda)*np.abs(s_k_for_b)**2)
 
+        # 1-4 pairs; regular coulomb only
+        for j in pair_indices:
+            atm_j = univ.atoms[j]
+            if j in alc_indices:
+                if j <= i:
+                    continue
+                charge_j_a, charge_j_b = charges[j]
+            else:
+                charge_j_a = charge_j_b = atm_j.charge
+                
+            pos_j = atm_j.position
+
+            r = np.linalg.norm(pos_i - pos_j)
+
+            coul_this += fudge*ke*(1/r)*( charge_i_a*charge_j_a*(1-this_lmbda) + charge_i_b*charge_j_b*(this_lmbda) )
 
     my_diffs[i_frame, :, 1] = r
     for i_for in range(n_for_lmbdas):

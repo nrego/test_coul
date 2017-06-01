@@ -7,7 +7,7 @@ tau_t           = 0.1
 ref_t           = 300
 tc_grps         = System
 
-comm_mode       = Angular
+comm_mode       = Linear
 nstcomm         = 10
 
 ; OUTPUT CONTROL OPTIONS
