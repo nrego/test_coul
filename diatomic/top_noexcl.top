@@ -1,0 +1,33 @@
+
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.83333333
+
+[ atomtypes ]
+; name      at.num  mass     charge ptype  sigma        epsilon
+C3          6       12.01    0.0000  A     3.39966951e-01  4.57729600e-01
+OH          8       16.00    0.0000  A     3.06647339e-01  8.80313600e-01
+DUM_C3      0       12.01    0.0000  A     0.00000e+00     0.00000e+00
+DUM_OH      0       16.00    0.0000  A     0.00000e+00     0.00000e+00
+
+[ moleculetype ]
+; Name            nrexcl
+molecule          0
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge    mass   typeB   chargeB  
+     1         DUM_C3   1     MOL     C1      1    0.5   12.01    DUM_C3    0.0
+     2         DUM_OH   1     MOL     O1      2   -0.5   16.00    DUM_OH    0.0
+
+[ bonds ]
+;  ai    aj funct  r  k
+    1     2     1  1.42600000E-01    262838.88
+
+
+[ system ]
+Diatomic test ewald
+
+
+[ molecules ]
+molecule        1

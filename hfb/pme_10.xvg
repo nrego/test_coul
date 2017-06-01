@@ -1,0 +1,24 @@
+# This file was created Wed May 31 20:27:55 2017
+# by the following command:
+# mdrun -deffnm pme_10 -rerun traj.trr -reprod -nt 1 -v 
+#
+# mdrun is part of G R O M A C S:
+#
+# Giving Russians Opium May Alter Current Situation
+#
+@    title "dH/d\xl\f{}, \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ subtitle "T = 300 (K), \xl\f{} = 1"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "dH/d\xl\f{} \xl\f{} 1"
+@ s1 legend "\xD\f{}H \xl\f{} 0"
+@ s2 legend "\xD\f{}H \xl\f{} 1"
+0.0000 109.8 -109.8 0
+1.0000 113.956 -113.956 0

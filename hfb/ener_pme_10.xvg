@@ -1,0 +1,24 @@
+# This file was created Wed May 31 20:31:57 2017
+# by the following command:
+# g_energy -f pme_10.edr -o ener_pme_10.xvg 
+#
+# g_energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "Gromacs Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coulomb-14"
+@ s1 legend "Coulomb (SR)"
+@ s2 legend "Coul. recip."
+@ s3 legend "Potential"
+    0.000000  16198.819336  -583697.750000  -79180.968750  -538903.625000
+    1.000000  16180.437500  -581926.437500  -79248.359375  -537542.437500
